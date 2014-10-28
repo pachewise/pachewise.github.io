@@ -1,0 +1,123 @@
+body {
+  font-family:"Trebuchet MS", sans-serif;
+  margin:0%;
+  background-color:white;
+}
+
+header {
+  padding-top:5%;
+  height:40em;
+}
+
+#logotype {
+  margin:0;
+  text-transform:uppercase;
+}
+
+#tagline {
+  margin:0;
+}
+
+#contact {
+  font-size:300%;
+  liststyle-type:none;
+  margin:0;
+  padding:0;
+}
+
+#contact li {
+  display:inline;
+}
+
+#contact a {
+  color:blue;
+  text-decoration:none;
+}
+
+#contact a:hover {
+  color:purple;
+}
+
+#contact a:not(#twitter) {
+  font-size:80%;
+}
+
+nav {
+  margin: 1em 0em;
+  font-size:180%;
+}
+
+nav > ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+
+}
+
+nav ul li {
+  display:inline;
+  text-transform:uppercase;
+}
+
+nav ul li a:not(#easy) {
+  background-color:black;
+}
+
+nav ul li a:not(#easy):hover,
+section h1 > a:hover,
+nav ul li a:not(#easy):visited,
+nav ul li a:not(#easy):visited {
+  background-color:gray;
+}
+
+#easy{
+  background-color:blue;
+}
+
+#easy:hover, #easy:visited {
+  background-color:purple;
+}
+nav ul li a {
+  padding:10px;
+  color:white;
+  font-weight:bold;
+}
+
+nav ul li a, nav ul li a:hover, h1 a {
+  text-decoration: none;
+}
+
+section {
+  padding:3% 0%;
+}
+
+section h1, header, footer {
+  text-align:center;
+}
+
+section h1 {
+  font-size:2em;
+  text-transform:uppercase;
+}
+
+section ul {
+  margin:5% 20% 0% 20%;
+}
+
+section h1 > a{
+  color:white;
+  background-color:black;
+}
+
+#work, #play {
+  height:100em;
+}
+
+footer {
+  font-size:75%;
+  margin:1% 0%;
+}
+
+.smaller {
+  font-size:80%;
+}
