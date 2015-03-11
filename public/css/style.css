@@ -27,11 +27,17 @@ header {
 
 #contact li {
   display:inline;
+  border-bottom: 1px blue solid;
 }
 
 #contact a {
   color:blue;
-  text-decoration:none;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+#contact li:hover {
+  border-bottom: 0px;
 }
 
 #contact a:hover {
@@ -83,7 +89,7 @@ nav ul li a {
   font-weight:bold;
 }
 
-nav ul li a, nav ul li a:hover, h1 a {
+nav ul li a, nav ul li a:hover {
   text-decoration: none;
 }
 
@@ -107,10 +113,11 @@ section ul {
 section h1 > a{
   color:white;
   background-color:black;
+  text-decoration: none;
 }
 
 #work, #play {
-  height:100em;
+  height:35em;
 }
 
 footer {
