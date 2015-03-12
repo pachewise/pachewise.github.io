@@ -22,7 +22,7 @@ section {
 
 #logotype {
   margin:0;
-  text-transform:uppercase;
+  text-transform: lowercase;
 }
 
 #tagline {
@@ -32,7 +32,7 @@ section {
 #contact {
   font-size:300%;
   list-style-type: none;
-  margin:0;
+  margin:0% 0% 5% 0%;
   padding:0;
 }
 
@@ -138,10 +138,11 @@ footer {
   font-size:80%;
 }
 
-a.play {
+a.play:hover {
   background-color: green!important;
 }
 
-a.play:hover {
-  background-color: red!important;
+.trim {
+  width:35%;
+  margin: 0 auto;
 }
