@@ -62,7 +62,6 @@ nav > ul {
 
 nav ul li {
   display:inline;
-  text-transform:uppercase;
 }
 
 nav ul li a:not(#easy) {
@@ -127,4 +126,12 @@ footer {
 
 .smaller {
   font-size:80%;
+}
+
+a.play {
+  background-color: green!important;
+}
+
+a.play:hover {
+  background-color: red!important;
 }
