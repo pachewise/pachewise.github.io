@@ -30,7 +30,7 @@ section {
 }
 
 #contact {
-  font-size:300%;
+  font-size:240%;
   list-style-type: none;
   margin:0% 0% 5% 0%;
   padding:0;
@@ -54,13 +54,13 @@ section {
 #contact a:hover {
   color:purple;
 }
-
-#contact a:not(#twitter) {
+/*
+#contact a {
   font-size:80%;
-}
+}*/
 
 nav {
-  margin: 3em 0em 4em 0em;
+  margin: 3em 0em 3em 0em;
   font-size:120%;
 }
 
