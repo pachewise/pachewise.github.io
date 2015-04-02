@@ -1,67 +1,278 @@
 body {
   font-family:"Trebuchet MS", sans-serif;
-  margin:0%;
-  padding:0%;
-  background-color:white;
+  margin:0;
+  padding:0;
   height:100%;
   width:100%;
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  min-width: 450px;
 }
 
-header {
-  padding:3%;
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.symphonybg {
+  background-image: url("../images/symphony.png");
+}
+
+.warning {
+  background-color: #FF7878;
+  margin: 0% auto;
   text-align: center;
-  min-height:35em;
+  width: 100%;
+  display: inline-block;
+  padding: 2px 0px;
 }
 
-section {
-  padding:2% 25%;
-  height:100%;
-  min-height:35em;
+.warning span {
+  font-size: 80%;
+}
+.warning span:after {
+  content: " (click to hide)";
+}
 
+.warning:focus {
+  display:none;
+}
+
+.warning {
+  z-index:0;
+}
+
+.warning span {
+  z-index:1;
+}
+
+.hero {
+  margin: 2% auto;
+  position: relative;
+}
+
+#navbar {
+  width: 20%;
+  min-width: 250px;
+  background-color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+@media(max-width: 1015px) {
+
+  section:before {
+    content: "";
+    display: inline-block;
+    height:10%;
+    min-height: 70px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%!important;
+    text-align: left!important;
+    overflow: auto;
+    margin: 0;
+    padding: 0.8em;
+    max-height: 10%;
+    min-height: 40px;
+    vertical-align: middle!important;
+  }
+
+  .sidebar nav ul li a {
+    padding: 5px;
+  }
+
+  .sidebar nav ul {
+    margin-left: 30px;
+  }
+
+  section {
+    padding: 13% 5% 10% 5% !important;
+    margin: 0 auto !important;
+    overflow: hidden;
+
+  }
+
+  .sidebar *, .sidebar a {
+    display: inline;
+    vertical-align: middle;
+  }
+  .sidebar #tagline, .sidebar p, .sidebar footer {
+    display: none;
+  }
+
+  .sidebar #logotype {
+    text-align:left;
+    font-size: 1.7em;
+  }
+
+  .sidebar nav {
+    font-size: 1.4em;
+  }
+
+  .sidebar #contact {
+    font-size: 60%;
+    float: right;
+  }
+}
+
+@media(min-width: 1015px) {
+  .sidebar {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    min-width: 250px;
+    overflow: hidden;
+    height: 100%;
+    padding: 2%;
+  }
+
+  .section-content {
+    overflow: hidden;
+    height: 80%;
+    max-height: 80%;
+  }
+
+  section, .section {
+    margin:0% 2% 10% 27%;
+    padding:2%;
+    width:66%;
+    font-size:90%;
+    height: 100%;
+  }
+
+  .sidebar nav {
+    margin: 20% 0%;
+    font-size:120%;
+  }
+
+  .sidebar nav ul li a {
+    padding:10px;
+  }
+  .sidebar #contact {
+    margin-bottom: 20%;
+  }
+
+}
+
+div, section, .section-content, .subsection, nav {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.section-content {
+  background-color: white;
+  padding: 5%;
+}
+
+section h1 {
+  font-size:240%;
+  text-transform:lowercase;
+  padding:1% 2%;
+  display: inline-block;
+  margin-top: 0;
+  width: 100px;
+}
+
+#work h1 {
+  background-color:black;
+  color:white;
+}
+
+#play h1 {
+  background-color:green;
+  color:white;
+}
+
+section h2 {
+  font-size:140%;
+  text-transform:lowercase;
+  margin:0%;
+  padding:0%;
+}
+
+section li {
+  list-style-type: square;
+}
+
+.subsection {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#work .subsection {
+  width: 100%;
+}
+
+#play .subsection {
+  max-width: 250px;
+  min-width: 150px;
+  padding-bottom: 10%;
+}
+
+.hidden {
+  z-index:0;
+  position:fixed;
+  top: 0px;
+  left:0px;
+  display:none;
+}
+
+#languages ~ ul {
+  display: inline-block;
+  max-width:50%;
+  vertical-align: top;
 }
 
 #logotype {
   margin:0;
-  text-transform: lowercase;
+  padding:0;
 }
 
 #tagline {
   margin:0;
+  text-transform: lowercase;
 }
 
-#contact {
+.hero nav {
+    margin: 20% 0%;
+    font-size:120%;
+  }
+
+.hero #contact {
+  margin-bottom: 20%;
+}
+
+#links {
   font-size:240%;
   list-style-type: none;
-  margin:0% 0% 5% 0%;
+  margin:0%;
   padding:0;
 }
 
-#contact li {
+#links li {
   border-bottom: 1px blue solid;
   display:inline;
 }
 
-#contact a {
+#links a {
   color:blue;
   line-height: 1.2em;
   text-decoration: none;
 }
 
-#contact li:hover {
+#links li:hover {
   border-bottom: 0px;
 }
 
-#contact a:hover {
+#links a:hover {
   color:purple;
-}
-/*
-#contact a {
-  font-size:80%;
-}*/
-
-nav {
-  margin: 3em 0em 3em 0em;
-  font-size:120%;
 }
 
 nav > ul {
@@ -75,26 +286,20 @@ nav ul li {
   display:inline;
 }
 
-nav ul li a:not(#easy) {
+nav ul li a {
   background-color:black;
 }
 
-nav ul li a:not(#easy):hover,
-section h1 > a:hover,
-nav ul li a:not(#easy):visited,
-nav ul li a:not(#easy):visited {
+nav ul li a:not(.play):hover {
   background-color:gray;
 }
 
-#easy{
-  background-color:blue;
+
+.hero nav ul li a {
+  padding:10px;
 }
 
-#easy:hover, #easy:visited {
-  background-color:purple;
-}
 nav ul li a {
-  padding:10px;
   color:white;
   font-weight:bold;
 }
@@ -103,35 +308,9 @@ nav ul li a, nav ul li a:hover {
   text-decoration: none;
 }
 
-section h1, header, footer {
-  text-align:center;
-}
-
-section h1 {
-  font-size:2em;
-  text-transform:lowercase;
-}
-
-section h2 {
-  font-size:1.4em;
-  text-transform:lowercase;
-  margin-bottom:0%;
-  padding-bottom:0%;
-}
-
-section h1 > a{
-  color:white;
-  background-color:black;
-  text-decoration: none;
-}
-
-#top h1 {
-  vertical-align: middle;
-}
-
 footer {
   font-size:75%;
-  padding:3% 0%;
+  margin-top: 5%;
 }
 
 .smaller {
@@ -139,10 +318,9 @@ footer {
 }
 
 a.play:hover {
-  background-color: green!important;
+  background-color: green;
 }
 
-.trim {
-  width:35%;
-  margin: 0 auto;
+code {
+  display: inline-block;
 }
