@@ -1,18 +1,22 @@
+/***************************/
+/* UNIVERSAL SETTINGS      */
+/***************************/
+
 body {
   font-family:"Trebuchet MS", sans-serif;
-  margin:0;
-  padding:0;
-  height:100%;
-  width:100%;
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 0;
+  top: 0%;
   overflow: auto;
   min-width: 450px;
 }
 
 html {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 .symphonybg {
@@ -36,15 +40,15 @@ html {
 }
 
 .warning:focus {
-  display:none;
+  display: none;
 }
 
 .warning {
-  z-index:0;
+  z-index: 0;
 }
 
 .warning span {
-  z-index:1;
+  z-index: 1;
 }
 
 .hero {
@@ -59,6 +63,178 @@ html {
   text-align: center;
   z-index: 1;
 }
+
+div, section, .section-content, .subsection, nav, section h1 {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.section-content {
+  background-color: white;
+  padding: 5%;
+}
+
+section h1 {
+  font-size: 220%;
+  text-transform: lowercase;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0%;
+  line-height: 2em;
+  width: 100px;
+}
+
+#work h1 {
+  background-color: black;
+  color: white;
+}
+
+#play h1 {
+  background-color: green;
+  color: white;
+}
+
+section h2 {
+  font-size: 140%;
+  text-transform: lowercase;
+  margin: 0%;
+  padding: 0%;
+}
+
+section li {
+  list-style-type: square;
+}
+
+.subsection {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#work .subsection {
+  width: 100%;
+}
+
+#play .subsection {
+  max-width: 250px;
+  min-width: 150px;
+  padding-bottom: 10%;
+}
+
+.hidden {
+  z-index: 0;
+  position:fixed;
+  top: 0%;
+  left: 0%;
+  display:none;
+}
+
+#languages ~ ul {
+  display: inline-block;
+  max-width: 50%;
+  vertical-align: top;
+}
+
+#logotype {
+  margin: 0%;
+  padding: 0%;
+}
+
+#tagline {
+  margin: 0%;
+  text-transform: lowercase;
+}
+
+.hero nav {
+    margin: 20% 0%;
+    font-size: 120%;
+  }
+
+.hero #contact {
+  margin-bottom: 20%;
+}
+
+#links {
+  font-size: 240%;
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+#links li {
+  border-bottom: 1px blue solid;
+  display: inline;
+}
+
+#links a {
+  color: blue;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+#links li:hover {
+  border-bottom: 0%;
+}
+
+#links a:hover {
+  color: purple;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  text-transform: lowercase;
+
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  background-color: black;
+}
+
+nav ul li a:not(.play):hover {
+  background-color: gray;
+}
+
+
+.hero nav ul li a {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a, nav ul li a:hover {
+  text-decoration: none;
+}
+
+footer {
+  font-size: 75%;
+  margin-top: 5%;
+}
+
+.smaller {
+  font-size:80%;
+}
+
+a.play:hover {
+  background-color: green;
+}
+
+code {
+  display: inline-block;
+}
+
+
+/***************************/
+/* SMALLER DEVICE SETTINGS */
+/***************************/
 
 @media(max-width: 700px) {
 
@@ -121,11 +297,15 @@ html {
   }
 }
 
+/***************************/
+/* DESKTOP SETTINGS        */
+/***************************/
+
 @media(min-width: 700px) {
   .sidebar {
     position: fixed;
-    top:0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
     min-width: 250px;
     overflow: hidden;
     height: 100%;
@@ -139,10 +319,11 @@ html {
   }
 
   section, .section {
-    margin:0% 2% 10% 27%;
-    padding:2%;
-    width:66%;
-    font-size:90%;
+    margin: 0% 2% 10% 27%;
+
+    padding: 2%;
+    width: 66%;
+    font-size: 90%;
     height: 100%;
   }
 
@@ -160,167 +341,3 @@ html {
 
 }
 
-div, section, .section-content, .subsection, nav {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;
-}
-
-.section-content {
-  background-color: white;
-  padding: 5%;
-}
-
-section h1 {
-  font-size:240%;
-  text-transform:lowercase;
-  padding:1% 2%;
-  display: inline-block;
-  margin-top: 0;
-  width: 100px;
-}
-
-#work h1 {
-  background-color:black;
-  color:white;
-}
-
-#play h1 {
-  background-color:green;
-  color:white;
-}
-
-section h2 {
-  font-size:140%;
-  text-transform:lowercase;
-  margin:0%;
-  padding:0%;
-}
-
-section li {
-  list-style-type: square;
-}
-
-.subsection {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#work .subsection {
-  width: 100%;
-}
-
-#play .subsection {
-  max-width: 250px;
-  min-width: 150px;
-  padding-bottom: 10%;
-}
-
-.hidden {
-  z-index:0;
-  position:fixed;
-  top: 0px;
-  left:0px;
-  display:none;
-}
-
-#languages ~ ul {
-  display: inline-block;
-  max-width:50%;
-  vertical-align: top;
-}
-
-#logotype {
-  margin:0;
-  padding:0;
-}
-
-#tagline {
-  margin:0;
-  text-transform: lowercase;
-}
-
-.hero nav {
-    margin: 20% 0%;
-    font-size:120%;
-  }
-
-.hero #contact {
-  margin-bottom: 20%;
-}
-
-#links {
-  font-size:240%;
-  list-style-type: none;
-  margin:0%;
-  padding:0;
-}
-
-#links li {
-  border-bottom: 1px blue solid;
-  display:inline;
-}
-
-#links a {
-  color:blue;
-  line-height: 1.2em;
-  text-decoration: none;
-}
-
-#links li:hover {
-  border-bottom: 0px;
-}
-
-#links a:hover {
-  color:purple;
-}
-
-nav > ul {
-  list-style-type:none;
-  padding:0;
-  margin:0;
-
-}
-
-nav ul li {
-  display:inline;
-}
-
-nav ul li a {
-  background-color:black;
-}
-
-nav ul li a:not(.play):hover {
-  background-color:gray;
-}
-
-
-.hero nav ul li a {
-  padding:10px;
-}
-
-nav ul li a {
-  color:white;
-  font-weight:bold;
-}
-
-nav ul li a, nav ul li a:hover {
-  text-decoration: none;
-}
-
-footer {
-  font-size:75%;
-  margin-top: 5%;
-}
-
-.smaller {
-  font-size:80%;
-}
-
-a.play:hover {
-  background-color: green;
-}
-
-code {
-  display: inline-block;
-}
