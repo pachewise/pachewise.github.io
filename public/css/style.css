@@ -212,7 +212,7 @@ footer {
   overflow: auto;
   width: 100%;
 }
-section h1 {
+section h2 {
   display: block;
   font-size: 220%;
   font-weight: bolder;
@@ -227,12 +227,12 @@ section h1 {
   line-height: 2em;
 }
 
-section h2 {
+section h3 {
   text-transform: uppercase;
   color: white;
 }
 
-section h3 {
+section h4 {
   color: white;
   text-align: center;
 }
@@ -249,7 +249,7 @@ section li {
   border-style: solid;
   letter-spacing: 2px;
   display: block;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 section li::before {
