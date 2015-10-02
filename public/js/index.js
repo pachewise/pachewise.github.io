@@ -1,24 +1,10 @@
-$(document).ready(function(){
-  $('section').addClass('hidden');
+$(document).ready(function() {
   $('a[href*=#]').click(function(event){
       event.preventDefault();
-      var section = $.attr(this, 'href');
-      if ($('#navbar').hasClass('hero')) {
-        $('section').removeClass('hidden');
-        heroToSidebar(section);
-      }
-      showSection(section);
+      var anchor = $( $.attr(this, 'href') );
+      var position = $('#content').scrollTop() + anchor.position().top;
+      $('#content').animate({
+          scrollTop: position
+      }, 500);
   });
 });
-
-function heroToSidebar(section) {
-          $('#navbar').removeClass('hero');
-          $('#navbar').addClass('sidebar');
-          $('body').addClass('symphonybg');
-}
-
-function showSection(section) {
-    $('html, body').animate({
-        scrollTop: $(section).offset().top
-    }, 400);
-}

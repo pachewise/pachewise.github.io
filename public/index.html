@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>JR pacheco</title>
+<!-- Last UPDATE: 02 OCT 2015 -->
+<!-- Always a work in progress! See something buggy? Send me an email at feedback@jrpache.co -->
+	<title>jrpache.co</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="description" content="The official website of José R. Pacheco">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
 	<script src="./js/jquery-2.1.1.min.js"></script>
 	<script src="./js/index.js"></script>
 </head>
@@ -18,16 +22,20 @@
 	</div>
 	</noscript>
 
-	<div id="navbar" class="hero">
 	<header>
-		<h1 id="logotype">JR pacheco</h1>
-		<h3 id="tagline">SW Dev; AI Fan; <a href="https://en.wikipedia.org/wiki/INTJ">INTJ</a></h3>
+	  <div id="brand">
+		  <h1 id="logotype"><a href="#contact">🜲 JR<span class="bigger">PACHECO</span></a></h1>
+<!-- 		  <h3 id="tagline">SW Dev; AI Fan; <a href="https://en.wikipedia.org/wiki/INTJ">INTJ</a></h3> -->
+		 </div>
 		<nav>
 			<ul>
-				<li><a href="#work">Work</a></li>
+				<li><a href="#work" class="work">Work</a></li>
 				<li><a href="#play" class="play">Play</a></li>
 			</ul>
 		</nav>
+		</div>
+	</header>
+	<div id="content">
 		<div id="contact">
 			<ul id="links">
 				<li>
@@ -43,19 +51,15 @@
 					<a href="https://github.com/pachewise" id="github" title="github profile">gh</a>
 				</li>
 			</ul>
-
+	    <div id="ok">
 			<p>
 				<b>OK to contact me re:</b>
 			</p>
 			<p class="trim">
 				networking; small freelance projects; AI-related subjects; basic questions related to my <a href="#work">work</a>; practicing a <a href="#languages">language</a>; any of my other <a href="#play">interests</a>
 			</p>
+			</div>
 		</div>
-	</header>
-	<footer>
-		&copy; 2014-2015 José R. Pacheco
-	</footer>
-	</div>
 	<section id="work">
 		<h1>Work<!-- <a href="#top">⌅</a> --></h1>
 		<div class="section-content">
@@ -63,10 +67,10 @@
 			<h2>Current</h2>
 				<ul>
 					<li>
-						<em>Software Developer</em>, ADF for Fusion Apps, <a href="http://www.oracle.com">Oracle America, Inc.</a>
+						Software Developer <span><a href="http://www.oracle.com">Oracle America</a></span>
 					</li>
 					<li>
-						<em>Freelancer</em>, website design for <a href="http://dlrdrums.com">DLR Drums Institute</a>
+						Freelance Web Designer <span><a href="http://dlrdrums.com">DLR Drums Institute</a></span>
 					</li>
 				</ul>
 			</div>
@@ -75,31 +79,35 @@
 				<h2>Education</h2>
 				<ul>
 					<li>
-						2013 - <em>B.S. in Electrical Engineering &amp; Computer Science</em>, <a href="http://web.mit.edu">MIT</a>
+						Bachelor of Science in EECS <span><a href="http://web.mit.edu" title="Massachusetts Institute of Technology, Class of 2013">MIT</a> '13</span>
 					</li>
 					<li>
-						2009 - <em>High School</em>, <a href="http://www.academiabautistapuertonuevo.com/">Academia Bautista de Puerto Nuevo</a>
+						<em>High School</em> <span><a href="http://www.academiabautistapuertonuevo.com/" title="Academia Bautista de Puerto Nuevo, Class of 2009">ABPN</a> '09</span>
 					</li>
 				</ul>
 			</div>
-			<div class="subsection">
-				<h2 id="languages">Languages</h2>
+			<div class="subsection" id="languages">
+				<h2>Languages</h2>
+				<h3>Computer</h3>
 				<ul>
-					<li>English, bilingual</li>
-					<li>Español, bilingüe</li>
-					<li>Français, élémentaire</li>
+					<li>Python <span><code>print "5 years"</code></span></li>
+					<li>Java <span><code>System.out.println("5 years");</code></span></li>
+					<li>Ruby on Rails <span><code>puts "3 years"</code></span></li>
+					<li>HTML <span><code>&lt;p&gt;7 years &lt;!-- up to HTML5 --&gt;&lt;/p&gt;</code></span></li>
+					<li>CSS <span><code>/* up to CSS3, including SCSS */</code></span></li>
+					<li>JS <span><code>console.log("AJAX, JSON, and jQuery");</code></span></li>
 				</ul>
+				<h3>Human</h3>
 				<ul>
-					<li>Python, <code>print "5 years"</code></li>
-					<li>Java, <code>System.out.println("5 years");</code></li>
-					<li>Ruby on Rails, <code>puts "3 years"</code></li>
-					<li>Others: HTML5, CSS3, JS</li>
+					<li>English <span>bilingual</span></li>
+					<li>Español <span>bilingüe</span></li>
+					<li>Français <span>élémentaire</span></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section id="play">
-		<h1>Play<!-- <a href="#top" class="play">⌅</a> --></h1>
+		<h1>Play</h1>
 		<div class="section-content">
 			<div class="subsection">
 				<h2>Games</h2>
@@ -138,5 +146,9 @@
 			</div>
 		</div>
 	</section>
+	</div>
+	<footer>
+		&copy; 2014-2015 José R. Pacheco
+	</footer>
 </body>
 </html>
