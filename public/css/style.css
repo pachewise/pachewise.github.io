@@ -118,7 +118,8 @@ header ul {
 
 nav {
   float: right;
-  min-width: 20%;
+  min-width: 60%;
+  text-align: right;
 }
 nav li {
   margin-left: 10%;
