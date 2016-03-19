@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Last UPDATE: 02 OCT 2015 -->
+<!-- Last UPDATE: 13 MAR 2016 -->
 <!-- Always a work in progress! See something buggy? Send me an email at feedback@jrpache.co -->
 	<title>jrpache.co</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,150 +9,83 @@
 	<meta name="description" content="The official website of José R. Pacheco">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- CSS -->
+
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/grid.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- FAVICON and mobile icon support -->
 	<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
 	<link rel="apple-touch-icon" href="./images/favicon.png">
 	<link rel="mask-icon" href="./images/favicon.svg" color="black">
-	<script src="./js/jquery-2.1.1.min.js"></script>
-	<script src="./js/index.js"></script>
 </head>
-<body>
+<body class="container">
 	<!-- NO JAVASCRIPT MSG -->
 	<noscript>
 	<div class="warning" tabindex="0">
 		<span>You have JavaScript disabled. I have tried to make this page usable without JavaScript; please write me at <a href="mailto:nojs@jrpache.co">nojs@jrpache.co</a> if that is not the case.</span>
 	</div>
 	</noscript>
-
 	<header>
-	  <div id="brand">
-		  <h1 id="logotype"><a href="#contact">🜲 JR<span class="bigger">PACHECO</span></a></h1>
-<!-- 		  <h3 id="tagline">SW Dev; AI Fan; <a href="https://en.wikipedia.org/wiki/INTJ">INTJ</a></h3> -->
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#work" class="work">Work</a></li>
-				<li><a href="#play" class="play">Play</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div id="content">
-		<div id="contact">
+	  <div id="brand" class="grid">
+	  	<div class="grid__col grid__col--2-of-3">
+		  <h2 id="logotype">José R. <span class="bigger">Pacheco</span></h2>
+		  <!-- <label>Currently</label> -->
+		  <span id="tagline">Software Developer, <a href="http://oracle.com/">Oracle</a></span><br>
+		  <em>Cambridge, MA</em>
+		  </div>
+		  <div class="grid__col grid__col--1-of-3">
+		  <label>Contact</label>
 			<ul id="links">
 				<li>
-					<a href="mailto:hi@jrpache.co" id="mail" title="e-mail">@</a>
+					linkedin <a href="https://www.linkedin.com/in/joserpacheco" id="linkedin" title="linkedin profile">@joserpacheco</a>
 				</li>
 				<li>
-					<a href="https://twitter.com/pachewise" id="twitter" title="twitter profile">#</a>
+					github <a href="https://github.com/pachewise" id="github" title="github profile">@pachewise</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/joserpacheco" id="linkedin" title="linkedin profile">in</a>
+					twitter <a href="https://twitter.com/pachewise" id="twitter" title="twitter profile">@pachewise</a>
 				</li>
 				<li>
-					<a href="https://github.com/pachewise" id="github" title="github profile">gh</a>
+					<a href="mailto:hi@jrpache.co" id="mail" title="e-mail">hi@jrpache.co</a>
 				</li>
 			</ul>
-	    <div id="ok">
-			<p>
-				<b>OK to contact me re:</b>
-			</p>
-			<p class="trim">
-				networking; small freelance projects; AI-related subjects; basic questions related to my <a href="#work">work</a>; practicing a <a href="#languages">language</a>; any of my other <a href="#play">interests</a>
-			</p>
 			</div>
 		</div>
-	<section id="work">
-		<h2>Work<!-- <a href="#top">⌅</a> --></h2>
-		<div class="section-content">
-			<div class="subsection">
-			<h3>Current</h3>
-				<ul>
-					<li>
-						Software Developer <span><a href="http://www.oracle.com">Oracle America</a></span>
-					</li>
-					<li>
-						Freelance Web Designer <span><a href="http://dlrdrums.com">DLR Drums Institute</a></span>
-					</li>
-				</ul>
+
+	</header>
+	<nav>
+		<div class="grid">
+			<div class="grid__col grid__col--1-of-6">
+				<label>Work</label>
 			</div>
 
-			<div class="subsection">
-				<h3>Education</h3>
-				<ul>
-					<li>
-						Bachelor of Science in EECS <span><a href="http://web.mit.edu" title="Massachusetts Institute of Technology, Class of 2013">MIT</a> '13</span>
-					</li>
-					<li>
-						<em>High School</em> <span><a href="http://www.academiabautistapuertonuevo.com/" title="Academia Bautista de Puerto Nuevo, Class of 2009">ABPN</a> '09</span>
-					</li>
-				</ul>
+			<div class="grid__col grid__col--5-of-6">
+				<a href="#java">Java</a>
 			</div>
-			<div class="subsection" id="languages">
-				<h3>Languages</h3>
-				<h4>Computer</h4>
-				<ul>
-					<li>Python <span><code>print "5 years"</code></span></li>
-					<li>Java <span><code>System.out.println("5 years");</code></span></li>
-					<li>Ruby on Rails <span><code>puts "3 years"</code></span></li>
-					<li>HTML <span><code>&lt;p&gt;7 years &lt;!-- up to HTML5 --&gt;&lt;/p&gt;</code></span></li>
-					<li>CSS <span><code>/* up to CSS3, including SCSS */</code></span></li>
-					<li>JS <span><code>console.log("AJAX, JSON, and jQuery");</code></span></li>
-				</ul>
-				<h4>Human</h4>
-				<ul>
-					<li>English <span>bilingual</span></li>
-					<li>Español <span>bilingüe</span></li>
-					<li>Français <span>élémentaire</span></li>
-				</ul>
+			<div class="grid__col grid__col--5-of-6 grid__col--push-1-of-6">
+				<a href="#python">Python</a>
 			</div>
-		</div>
-	</section>
-	<section id="play">
-		<h2>Play</h2>
-		<div class="section-content">
-			<div class="subsection">
-				<h3>Games</h3>
-				<ul>
-					<li>Settlers of Catan</li>
-					<li>Backgammon</li>
-					<li>Go</li>
-					<li>
-						<a href="http://chess.com/members/view/pachewise?ref_id=1202091">chess.com</a>
-					</li>
-
-				</ul>
+			<div class="grid__col grid__col--5-of-6 grid__col--push-1-of-6">
+				<a href="#rails">Rails</a>
 			</div>
-			<div class="subsection">
-				<h3>Social</h3>
-				<ul>
-					<li><a href="https://instagram.com/pachewise">instagram</a></li>
-					<li><a href="https://reddit.com/r/travel">r/travel</a></li>
-				</ul>
+			<div class="grid__col grid__col--5-of-6 grid__col--push-1-of-6">
+				<a href="#web">Web</a>
 			</div>
-			<div class="subsection">
-				<h3>Music</h3>
-				<ul>
-					<li>Miles Davis</li>
-					<li>Classical</li>
-					<li><a href="https://songza.com">Songza</a></li>
-					<li>Bonobo</li>
-					<li>Kanye</li>
-				</ul>
+			<div class="grid__col grid__col--5-of-6 grid__col--push-1-of-6">
+				<a href="#writing">Writing</a>
 			</div>
-			<div class="subsection">
-				<h3>Sports</h3>
-				<ul>
-					<li>Basketball</li>
-					<li>Table Tennis</li>
-					<li>Lifting</li>
-
-				</ul>
-			</div>
-		</div>
-	</section>
-	</div>
+		</nav>
+	</nav>
 	<footer>
-		&copy; 2014-2015 José R. Pacheco
+		&copy; 2014-2016 José R. Pacheco
+
+		<!-- JAVASCRIPT -->
+		<script src="./js/jquery-2.1.1.min.js"></script>
+		<script src="./js/index.js"></script>
+
 	</footer>
+	</div>
 </body>
 </html>

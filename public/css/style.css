@@ -1,294 +1,99 @@
-/***************************/
-/* UNIVERSAL SETTINGS      */
-/***************************/
-
 body {
-  font-family:"Helvetica",sans-serif;
-  margin: 0%;
+  font-family:"Helvetica Neue", "Helvetica", sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0% auto;
   height: 100%;
   width: auto;
-  min-width: 700px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, .99);
-  color: white;
-}
-
-html {
-  margin: 0%;
-  padding: 0%;
 }
 
 a {
-  color: red;
-}
-
-.bigger {
-  font-weight: bold;
-}
-
-.warning {
-  background-color: #FF7878;
-  margin: 0% auto;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  padding: 2px 0px;
-}
-
-.warning span {
-  font-size: 80%;
-}
-.warning span:after {
-  content: " (click to hide)";
-}
-
-.warning:focus {
-  display: none;
-}
-
-.warning {
-  z-index: 0;
-}
-
-.warning span {
-  z-index: 1;
-}
-
-/* LOGO & TAGLINE */
-
-#logotype {
-  margin: 0%;
-
-}
-h1#logotype {
-  font-size: 150%;
-  font-weight:lighter;
-  padding: 0%;
-  margin: 0%;
-  letter-spacing: 5px;
-}
-
-#logotype a {
-  color: white;
   text-decoration: none;
+  color: DodgerBlue;
 }
 
-#logotype a:hover::after {
-  content: "⬆ top";
-  font-size: 50%;
-  letter-spacing: 0px;
-  color: rgb(100,100,100);
-}
-
-#tagline  {
-  text-transform: lowercase;
-  margin: 0%;
-  padding: 0%;
-  font-weight: lighter;
-}
-
-#brand {
-  float: left;
-  width: 40%;
-}
-
-
-
-/* NAV */
-header {
-  list-style-type: none;
-  width: 94%;
-  padding: 2% 3%;
-  margin: 0%;
-  line-height: 2em;
-  height: 15%;
-  vertical-align: middle;
+label {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: .125em;
+  padding-bottom: 6px;
+  cursor: text;
   display: block;
 }
 
-header li {
-  display: inline;
+h2 {
+  margin-top: 0;
 }
 
 header ul {
   list-style-type: none;
-  margin: 0%;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  margin: 0;
+}
+
+header {
+  padding: 5% 5% 5% 5%;
+  height: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  padding: 2% 5%;
+  background: DarkSlateGray;
+  color: white;
 }
 
 nav {
-  float: right;
-  min-width: 60%;
-  text-align: right;
-}
-nav li {
-  margin-left: 10%;
+  padding: 0% 5% 5% 5%;
 }
 
-nav li a {
-  color: white;
-  text-decoration: none;
-  font-size: 120%;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-nav li a:hover {
-  border-bottom: 5px white solid;
-}
-
-/* CONTACT */
-#contact {
-  text-align: center;
-  margin: 10% auto;
-  height:70%;
-
-}
-
-#contact ul {
-  list-style-type: none;
-  margin: 0%;
-  padding: 0%;
-}
-
-#contact li {
-  display: inline;
-}
-
-#links a {
-  font-size: 240%;
+nav a, nav label {
   color: black;
-  background-color: white;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 2em;
-  width: 2em;
-  margin: 1%;
-}
-
-#twitter:hover {
-  background-color: #55acee;
-  color: white;
-}
-
-#mail:hover {
-  background-color: #bb0000;
-  color: white;
-}
-
-#linkedin:hover {
-  background-color: #0077b5;
-  color: white;
-}
-
-#github:hover {
-  background-color: #6E5494;
-  color: white;
-}
-
-#ok {
-  width: 250px;
-  margin: 5% auto;
-}
-
-/* FOOTER */
-footer {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 75%;
-}
-/* SECTIONS */
-#content {
-  position: fixed;
-  top: 10%;
-  height: 90%;
-  overflow: auto;
-  width: 100%;
-}
-section h2 {
+  height: 100%;
   display: block;
-  font-size: 220%;
-  font-weight: bolder;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  margin: 0% auto;
-  color: black;
-  background-color: white;
-  vertical-align: bottom;
-  width: 5em;
-  line-height: 2em;
 }
 
-section h3 {
-  text-transform: uppercase;
+nav a {
+  padding-left: 10px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav a[href="#java"]{
+  background: RebeccaPurple;
   color: white;
 }
 
-section h4 {
-  color: white;
-  text-align: center;
-}
-section ul {
-  list-style-type: none;
-  display: block;
-  padding: 0px;
-}
-section li {
-  padding: 20px 0px 20px 0px;
-  vertical-align: middle;
-  border-width: 1px 0px 0px 0px;
-  border-color: #767676;
-  border-style: solid;
-  letter-spacing: 2px;
-  display: block;
-  font-size: 100%;
-}
-
-section li::before {
-  content: "//";
-  padding-right: 19px;
+nav a[href="#python"] {
+  background: green;
   color: white;
 }
 
-section li:last-child {
-  border-bottom: 1px solid #767676;
+nav a[href="#rails"] {
+  background: FireBrick;
+  color: white;
 }
 
-section li span {
-  float: right;
+nav a[href="#web"] {
+  background: SteelBlue;
+  color: white;
 }
 
-section li a {
-  text-decoration: none;
-  font-weight: bold;
+nav a[href="#writing"] {
+  background: Chocolate;
+  color: white;
 }
 
-code {
-  font-style: normal;
+.stretcher {
+  height: 1000px;
+  background-color: light-blue;
+  padding: 0;
 }
-
-section {
-  color: gray;
-}
-.section-content {
-  margin: 5% auto;
-  padding: 3%;
-  width: 50%;
-}
-
-.subsection {
-  text-align: left;
-}
-
-#languages li span {
-  font-style: italic;
-}
-
