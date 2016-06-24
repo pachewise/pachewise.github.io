@@ -2,7 +2,6 @@ body {
   font-family:"Helvetica Neue", "Helvetica", sans-serif;
   text-rendering: optimizeLegibility;
   margin: 0% auto;
-  height: 100%;
   width: auto;
 }
 
@@ -25,13 +24,17 @@ h2 {
   margin-bottom: 20px;
 }
 #logotype {
-  text-transform: lowercase;
 }
 
 @media (max-width: 700px) {
   .info { text-align: center;
           padding-bottom: 30px; }
+}
 
+@media (min-width: 700px) {
+  nav .grid__col {
+    padding-bottom: 0;
+  }
 }
 .grid__col:last-child {
   padding-bottom:0;
@@ -54,54 +57,85 @@ header {
   top: 0;
   left: 0;
   background: white;
+  box-shadow: 0px 2px 3px black;
+  z-index: 1;
 }
 
 footer {
   bottom: 0;
   left: 0;
-  padding: 2% 5%;
+  padding: 20px;
   background: DarkSlateGray;
   color: white;
   font-size: 0.825em;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
 }
 
 nav {
-  padding: 0% 5% 5% 5%;
+  padding: 20px 5%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.80);
 }
-
-nav a, nav label {
-  color: black;
-  height: 100%;
-  display: block;
-}
-
 nav a {
-  padding-left: 10px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  font-size: 125%;
+  display: block;
+  color: white;
+  padding: 0.5em 0em 0.5em 0.5em;
+  box-shadow: 3px 3px 1px black;
+  letter-spacing: .08em;
 }
 
-nav a[href="#java"]{
-  background: RebeccaPurple;
-  color: white;
+nav a[href="#java"] {
+  background-color: RebeccaPurple;
 }
 
 nav a[href="#python"] {
-  background: green;
-  color: white;
+  background-color: green;
 }
 
 nav a[href="#rails"] {
-  background: FireBrick;
-  color: white;
+  background-color: FireBrick;
 }
 
 nav a[href="#web"] {
-  background: SteelBlue;
-  color: white;
+  background-color: SteelBlue;
 }
 
 nav a[href="#writing"] {
-  background: Chocolate;
+  background-color: Chocolate;
+}
+
+.block {
+  padding: 5%;
   color: white;
+
+}
+
+#content {
+  box-shadow: 0px -2px 3px black;
+  z-index: 1;
+  padding: 5%;
+}
+#java {
+  display: block;
+  background: RebeccaPurple;
+
+}
+
+#python {
+  background-color: green;
+}
+
+#rails {
+  background-color: FireBrick;
+}
+
+#web {
+  background-color: SteelBlue;
+}
+
+#writing {
+  background-color: Chocolate;
 }
