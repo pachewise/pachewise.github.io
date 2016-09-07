@@ -7,7 +7,7 @@ body {
 
 a {
   text-decoration: none;
-  color: DodgerBlue;
+  color: blue;
 }
 
 label {
@@ -29,6 +29,9 @@ h2 {
 @media (max-width: 700px) {
   .info { text-align: center;
           padding-bottom: 30px; }
+  nav {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -51,13 +54,12 @@ header li {
 }
 
 header {
-  padding: 5% 5% 5% 5%;
+  padding: 5% 5% 0% 5%;
   height: 100%;
   min-height: 100%;
   top: 0;
   left: 0;
   background: white;
-  box-shadow: 0px 2px 3px black;
   z-index: 1;
 }
 
@@ -74,54 +76,79 @@ footer {
 }
 
 nav {
-  padding: 20px 5%;
+  padding: 5% 5% 0% 5%;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.80);
 }
 nav a {
   font-size: 125%;
-  display: block;
   color: white;
-  padding: 0.5em 0em 0.5em 0.5em;
-  box-shadow: 3px 3px 1px black;
-  letter-spacing: .08em;
+  text-decoration: underline;
 }
 
 nav a[href="#java"] {
-  background-color: RebeccaPurple;
+  color: RebeccaPurple;
 }
 
 nav a[href="#python"] {
-  background-color: green;
+  color: green;
 }
 
 nav a[href="#rails"] {
-  background-color: FireBrick;
+  color: FireBrick;
 }
 
 nav a[href="#web"] {
-  background-color: SteelBlue;
+  color: SteelBlue;
 }
 
 nav a[href="#writing"] {
-  background-color: Chocolate;
+  color: Chocolate;
+}
+
+#default {
+  display: block;
+  color: silver;
+  height: 20em;
+  padding: 2% 0%;
+  vertical-align: middle;
+}
+
+.block:target ~ #default {
+  display: none;
 }
 
 .block {
-  padding: 5%;
+  padding: 2%;
   color: white;
+  display: none;
+  height: 20em;
+}
 
+.block:target {
+  display: block;
+}
+
+.default {
+  display: block;
+  color: gray;
+}
+
+.ctct {
+  width: 60px;
+  display: inline-block;
+}
+
+#links li:last-child {
+  margin-top: .5em;
 }
 
 #content {
-  box-shadow: 0px -2px 3px black;
   z-index: 1;
   padding: 5%;
 }
-#java {
-  display: block;
-  background: RebeccaPurple;
 
+#java {
+  background-color: RebeccaPurple;
 }
 
 #python {
