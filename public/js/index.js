@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
-    $('a[href^="#"]').on('click', function (e) {
+    $('nav a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
 
-        $('a').each(function () {
+        $('a:not([href=#top])').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('html, body').stop().animate({
             'scrollTop': offset
         }, 500, 'swing', function () {
-            window.location.hash = target;
+            updateLocation(target);
             checkSticky();
             $(document).on("scroll", onScroll);
         });
@@ -33,16 +33,36 @@ function onScroll(event){
 
     $('nav a').each(function () {
         var currentLink = $(this);
+
         var refElement = $(currentLink.attr("href"));
         if (refElement.selector === "#top") return;
-        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-            $('.block').removeClass("active");
+
+        var scrollingOver = refElement.offset().top <= scrollPosition + $('nav').outerHeight();
+        var notPassed = refElement.offset().top + refElement.outerHeight() > scrollPosition;
+
+        var noActive = true;
+        if (scrollingOver && notPassed) {
+            console.log(scrollPosition, refElement.offset().top, refElement.outerHeight());
+            noActive = false;
             refElement.addClass("active");
-            //window.location.hash = refElement.selector;
+
+            updateLocation(refElement.selector);
         } else {
             refElement.removeClass("active");
         }
+
+        if (noActive) $('#java').addClass("active"); // default
     });
+}
+function updateLocation(target) {
+    if (history.pushState)
+        history.pushState(null, null, target);
+    else
+        location.hash = target;
+    target = target && target !== "#top" ? target : "#software";
+    document.title = "José R. Pacheco | " + target.substr(1);
+    $('.block').removeClass("active");
+    $(target).addClass("active");
 }
 
 function checkSticky($t) {
@@ -54,7 +74,7 @@ function checkSticky($t) {
         mn.addClass(mns);
     } else {
         mn.removeClass(mns);
-        $('nav ul li a').removeClass("active");
         window.location.hash = "";
+        $('#java').addClass="active";
     }
 }

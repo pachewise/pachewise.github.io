@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family:"Helvetica Neue", "Helvetica", sans-serif;
   text-rendering: optimizeLegibility;
   margin: 0% auto;
   width: auto;
-  min-width: 400px;
+  min-width: 470px;
 }
 
 ul {
@@ -61,6 +64,11 @@ label {
 
 }
 
+nav grid {
+  padding-bottom:0;
+  margin-bottom: 0;
+}
+
 footer {
   bottom: 0;
   left: 0;
@@ -74,12 +82,8 @@ footer {
   clear: both;
 }
 
-#top {
-  padding-bottom: 5%;
-}
-
 nav {
-  padding: 10px 5% 0px 5%;
+  padding: 0 5%;
   z-index: 1;
   box-sizing: border-box;
   min-width: 400px;
@@ -94,18 +98,6 @@ nav div {
 #links li:last-child {
   margin-top: .5em;
 }
-#home {
-  visibility: hidden;
-}
-
-#home a {
-  background-color: white;
-  font-weight: bold;
-}
-
-nav:not(.sticky-nav) {
-  background-color: white;
-}
 
 .sticky-nav {
   position: fixed;
@@ -114,56 +106,61 @@ nav:not(.sticky-nav) {
   backgroud-color: rgba(255, 255, 255, 0);
 }
 
-nav.sticky-nav #home {
+nav.sticky-nav {
   visibility: visible;
 }
 
 nav a {
   font-size: 100%;
   display: block;
-  padding: .3em;
+  padding: 5px;
   box-sizing: border-box;
   vertical-align: middle;
   color: white;
   width: 100%;
+  min-width: 50px;
+  height: 100%;
+  text-align: right;
+}
+
+nav.sticky-nav a[href="#top"]::before {
+  content: "↑";
+  text-align: left;
+  color: black;
+  padding: 5px;
+  background-color: white;
 }
 
 nav a[href="#top"] {
-  color: black;
-  border: 2px solid black;
+  text-align: left;
 }
 
 nav a[href="#java"] {
   background-color: RebeccaPurple;
-  border: 2px solid RebeccaPurple;
 }
 
 nav a[href="#python"] {
   background-color: green;
-  border: 2px solid green;
 }
 
 nav a[href="#rails"] {
   background-color: FireBrick;
-  border: 2px solid FireBrick;
 }
 
 nav a[href="#js"] {
   background-color: SteelBlue;
-  border: 2px solid SteelBlue;
 }
 
 nav a[href="#writing"] {
   background-color: Chocolate;
-  border: 2px solid Chocolate;
+}
+
+nav grid {
+  height: 100%;
 }
 
 nav .grid__col {
   padding-bottom: 0;
-}
-
-.grid__col:last-child {
-  padding-bottom:0;
 }
 
 .block {
@@ -173,9 +170,10 @@ nav .grid__col {
   box-sizing: border-box;
   height: 800px;
   position: relative;
+  width: 100%;
 }
 
-.block.active {
+.active {
   opacity: 1;
 }
 
@@ -187,9 +185,9 @@ nav .grid__col {
 .block label {
   font-size: 1em;
   position: absolute;
-  bottom: 0px;
   right: 0px;
-  padding-right: 1em;
+  top: 0px;
+  padding: 1em 1em 0 0;
 }
 
 .ctct {
@@ -199,11 +197,12 @@ nav .grid__col {
 
 #content {
   height: 500%;
+  width: 100%;
 }
+
 
 #java {
   background-color: RebeccaPurple;
-  opacity: 1;
 }
 
 #python {
