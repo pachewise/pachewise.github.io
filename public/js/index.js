@@ -13,10 +13,7 @@ $(document).ready(function () {
         var target = this.hash;
         $target = $(target);
         var offset = $target.offset().top+2;
-        if (target === "#top") {
-            offset = 0;
-            $('nav').hide();
-        }
+        if (target === "#top") $('nav').hide();
         $('html, body').stop().animate({
             'scrollTop': offset
         }, 500, 'swing', function () {
@@ -59,8 +56,8 @@ function updateLocation(target) {
         history.pushState(null, null, target);
     else
         location.hash = target;
-    target = target && target !== "#top" ? target : "#software";
-    document.title = "José R. Pacheco | " + target.substr(1);
+    var targetName = target && target !== "#top" ? target : "#software";
+    document.title = "José R. Pacheco | " + targetName.substr(1);
     $('.block').removeClass("active");
     $(target).addClass("active");
 }
