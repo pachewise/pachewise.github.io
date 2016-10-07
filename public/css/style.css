@@ -3,6 +3,11 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0% auto;
   width: auto;
+  min-width: 400px;
+}
+
+ul {
+  list-style-type: square;
 }
 
 a {
@@ -10,37 +15,17 @@ a {
   color: blue;
 }
 
-label {
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: .125em;
-  padding-bottom: 1em;
-  cursor: text;
-  display: block;
-}
-
 h2 {
   margin-top: 0;
-  margin-bottom: 20px;
 }
-#logotype {
-}
-
-@media (max-width: 700px) {
-  .info { text-align: center;
-          padding-bottom: 30px; }
-  nav {
-    margin-top: 10px;
-  }
+h2 a {
+  color: black;
 }
 
-@media (min-width: 700px) {
-  nav .grid__col {
-    padding-bottom: 0;
-  }
-}
-.grid__col:last-child {
-  padding-bottom:0;
+header {
+  display: block;
+  box-sizing: border-box;
+  padding: 5% 5% 1% 5%;
 }
 
 header ul {
@@ -54,13 +39,26 @@ header li {
 }
 
 header {
-  padding: 5% 5% 0% 5%;
-  height: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
   background: white;
-  z-index: 1;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: .125em;
+  padding-bottom: 1em;
+  cursor: text;
+  display: block;
+}
+
+#logotype {
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid black;
+  padding: 3px;
+  text-align: center;
+  width: 5em;
+
 }
 
 footer {
@@ -72,65 +70,106 @@ footer {
   font-size: 0.825em;
   width: 100%;
   box-sizing: border-box;
-  height: auto;
+  height: 100px;
+  clear: both;
 }
 
 nav {
-  padding: 5% 5% 0% 5%;
-  z-index: 0;
+  padding: 1% 5%;
+  background-color: white;
+  z-index: 1;
+  box-sizing: border-box;
 }
+
+nav div {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#links li:last-child {
+  margin-top: .5em;
+}
+#home {
+  visibility: hidden;
+}
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav.sticky-nav #home {
+  visibility: visible;
+}
+
 nav a {
   font-size: 125%;
+  font-weight: bold;
+  display: block;
+  padding: .3em;
+  box-sizing: border-box;
+  vertical-align: middle;
   color: white;
-  text-decoration: underline;
+}
+
+nav a.active {
+  color: black;
+}
+
+nav a[href="#top"] {
+  color: black;
+  border: 2px solid black;
 }
 
 nav a[href="#java"] {
-  color: RebeccaPurple;
+  background-color: RebeccaPurple;
+  border: 2px solid RebeccaPurple;
 }
 
 nav a[href="#python"] {
-  color: green;
+  background-color: green;
+  border: 2px solid green;
 }
 
 nav a[href="#rails"] {
-  color: FireBrick;
+  background-color: FireBrick;
+  border: 2px solid FireBrick;
 }
 
-nav a[href="#web"] {
-  color: SteelBlue;
+nav a[href="#js"] {
+  background-color: SteelBlue;
+  border: 2px solid SteelBlue;
 }
 
 nav a[href="#writing"] {
-  color: Chocolate;
+  background-color: Chocolate;
+  border: 2px solid Chocolate;
 }
 
-#default {
-  display: block;
-  color: silver;
-  height: 20em;
-  padding: 2% 0%;
-  vertical-align: middle;
-}
-
-.block:target ~ #default {
-  display: none;
+.grid__col:last-child {
+  padding-bottom:0;
 }
 
 .block {
   padding: 2%;
   color: white;
-  display: none;
-  height: 20em;
+  opacity: 0.5;
+  box-sizing: border-box;
+  height: 700px;
 }
 
 .block:target {
-  display: block;
+  opacity: 1;
 }
 
-.default {
-  display: block;
-  color: gray;
+.block a {
+  color: white;
+  text-decoration: underline;
+}
+
+.block label {
+  font-size: 1em;
 }
 
 .ctct {
@@ -138,17 +177,9 @@ nav a[href="#writing"] {
   display: inline-block;
 }
 
-#links li:last-child {
-  margin-top: .5em;
-}
-
-#content {
-  z-index: 1;
-  padding: 5%;
-}
-
 #java {
   background-color: RebeccaPurple;
+  opacity: 1;
 }
 
 #python {
@@ -159,10 +190,28 @@ nav a[href="#writing"] {
   background-color: FireBrick;
 }
 
-#web {
+#js {
   background-color: SteelBlue;
 }
 
 #writing {
   background-color: Chocolate;
 }
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+  body {
+    padding-top: 2%; /* extra padding for logo */
+  }
+}
+
+@media (min-width: 700px) {
+
+  nav .grid__col {
+    padding-bottom: 0;
+  }
+
+}
+
+
