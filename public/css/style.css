@@ -25,7 +25,7 @@ h2 a {
 header {
   display: block;
   box-sizing: border-box;
-  padding: 5% 5% 1% 5%;
+  padding: 5% 1% 1% 5%;
 }
 
 header ul {
@@ -70,15 +70,20 @@ footer {
   font-size: 0.825em;
   width: 100%;
   box-sizing: border-box;
-  height: 100px;
+  height: 110px;
   clear: both;
 }
 
+#top {
+  padding-bottom: 5%;
+}
+
 nav {
-  padding: 1% 5%;
-  background-color: white;
+  padding: 10px 5% 0px 5%;
   z-index: 1;
   box-sizing: border-box;
+  min-width: 400px;
+  max-height: 50px;
 }
 
 nav div {
@@ -93,10 +98,20 @@ nav div {
   visibility: hidden;
 }
 
+#home a {
+  background-color: white;
+  font-weight: bold;
+}
+
+nav:not(.sticky-nav) {
+  background-color: white;
+}
+
 .sticky-nav {
   position: fixed;
   width: 100%;
   top: 0;
+  backgroud-color: rgba(255, 255, 255, 0);
 }
 
 nav.sticky-nav #home {
@@ -104,17 +119,13 @@ nav.sticky-nav #home {
 }
 
 nav a {
-  font-size: 125%;
-  font-weight: bold;
+  font-size: 100%;
   display: block;
   padding: .3em;
   box-sizing: border-box;
   vertical-align: middle;
   color: white;
-}
-
-nav a.active {
-  color: black;
+  width: 100%;
 }
 
 nav a[href="#top"] {
@@ -147,6 +158,10 @@ nav a[href="#writing"] {
   border: 2px solid Chocolate;
 }
 
+nav .grid__col {
+  padding-bottom: 0;
+}
+
 .grid__col:last-child {
   padding-bottom:0;
 }
@@ -156,10 +171,11 @@ nav a[href="#writing"] {
   color: white;
   opacity: 0.5;
   box-sizing: border-box;
-  height: 700px;
+  height: 800px;
+  position: relative;
 }
 
-.block:target {
+.block.active {
   opacity: 1;
 }
 
@@ -170,11 +186,19 @@ nav a[href="#writing"] {
 
 .block label {
   font-size: 1em;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding-right: 1em;
 }
 
 .ctct {
   width: 60px;
   display: inline-block;
+}
+
+#content {
+  height: 500%;
 }
 
 #java {
@@ -196,22 +220,6 @@ nav a[href="#writing"] {
 
 #writing {
   background-color: Chocolate;
-}
-
-/* Media Queries */
-
-@media (max-width: 700px) {
-  body {
-    padding-top: 2%; /* extra padding for logo */
-  }
-}
-
-@media (min-width: 700px) {
-
-  nav .grid__col {
-    padding-bottom: 0;
-  }
-
 }
 
 
