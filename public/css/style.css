@@ -107,6 +107,7 @@ footer {
 #txt label {
   color: Chocolate;
 }
+:active label
 
 .block label, nav {
   text-transform: lowercase;
