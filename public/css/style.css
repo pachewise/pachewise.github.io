@@ -14,7 +14,6 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: blue;
 }
 
@@ -61,12 +60,20 @@ label {
   padding: 3px;
   text-align: center;
   width: 5em;
-
 }
 
-nav grid {
-  padding-bottom:0;
-  margin-bottom: 0;
+#logotype a {
+  text-decoration: none;
+}
+
+nav {
+  margin: 2% 0% 5% 5%;
+}
+
+nav li, nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 footer {
@@ -78,116 +85,37 @@ footer {
   font-size: 0.825em;
   width: 100%;
   box-sizing: border-box;
-  height: 110px;
   clear: both;
-}
-
-nav {
-  padding: 0 5%;
-  z-index: 1;
-  box-sizing: border-box;
-  min-width: 400px;
-  max-height: 50px;
-}
-
-nav div {
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 #links li:last-child {
   margin-top: .5em;
 }
 
-.sticky-nav {
-  position: fixed;
+#java label {
+  color: RebeccaPurple;
+}
+
+#python label {
+  color: green;
+}
+
+#js label {
+  color: SteelBlue;
+}
+
+#txt label {
+  color: Chocolate;
+}
+
+.block label, nav {
+  text-transform: lowercase;
+  font-size: 1.2em;
+}
+
+#content {
+  padding-left: 5%;
   width: 100%;
-  top: 0;
-  backgroud-color: rgba(255, 255, 255, 0);
-}
-
-nav.sticky-nav {
-  visibility: visible;
-}
-
-nav a {
-  font-size: 100%;
-  display: block;
-  padding: 5px;
-  box-sizing: border-box;
-  vertical-align: middle;
-  color: white;
-  width: 100%;
-  min-width: 50px;
-  height: 100%;
-  text-align: right;
-}
-
-nav.sticky-nav a[href="#top"]::before {
-  content: "↑";
-  text-align: left;
-  color: black;
-  padding: 5px;
-  background-color: white;
-}
-
-nav a[href="#top"] {
-  text-align: left;
-}
-
-nav a[href="#java"] {
-  background-color: RebeccaPurple;
-}
-
-nav a[href="#python"] {
-  background-color: green;
-}
-
-nav a[href="#rails"] {
-  background-color: FireBrick;
-}
-
-nav a[href="#js"] {
-  background-color: SteelBlue;
-}
-
-nav a[href="#writing"] {
-  background-color: Chocolate;
-}
-
-nav grid {
-  height: 100%;
-}
-
-nav .grid__col {
-  padding-bottom: 0;
-}
-
-.block {
-  padding: 2%;
-  color: white;
-  opacity: 0.5;
-  box-sizing: border-box;
-  height: 800px;
-  position: relative;
-  width: 100%;
-}
-
-.active {
-  opacity: 1;
-}
-
-.block a {
-  color: white;
-  text-decoration: underline;
-}
-
-.block label {
-  font-size: 1em;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  padding: 1em 1em 0 0;
 }
 
 .ctct {
@@ -195,30 +123,7 @@ nav .grid__col {
   display: inline-block;
 }
 
-#content {
-  height: 500%;
-  width: 100%;
+.blurb {
+  margin: 3% 0%;
+  line-height: 1.5em;
 }
-
-
-#java {
-  background-color: RebeccaPurple;
-}
-
-#python {
-  background-color: green;
-}
-
-#rails {
-  background-color: FireBrick;
-}
-
-#js {
-  background-color: SteelBlue;
-}
-
-#writing {
-  background-color: Chocolate;
-}
-
-
