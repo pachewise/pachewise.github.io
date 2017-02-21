@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  min-width: 560px;
+}
+
 body {
   font-family:"Helvetica Neue", "Helvetica", sans-serif;
   text-rendering: optimizeLegibility;
   margin: 0% auto;
   width: auto;
-  min-width: 470px;
+  min-width: 560px;
 }
 
 ul {
@@ -118,7 +123,7 @@ footer {
 }
 
 #content {
-  padding-left: 5%;
+  padding: 0% 5%;
   width: 100%;
 }
 
