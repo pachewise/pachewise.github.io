@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Last UPDATE: 13 MAR 2016 -->
-<!-- Always a work in progress! See something buggy? Send me an email at feedback@jrpache.co -->
-	<title>José R. Pacheco | software</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<meta name="description" content="The official website of José R. Pacheco">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Last UPDATE: 27 OCT 2017 -->
+    <!-- Always a work in progress! See something buggy? Send me an email at feedback@jrpache.co -->
+    <title>José R. Pacheco | software</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="The official website of José R. Pacheco">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./css/grid.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-
-	<!-- FAVICON and mobile icon support -->
-	<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
-	<link rel="apple-touch-icon" href="./images/favicon.png">
-	<link rel="mask-icon" href="./images/favicon.svg">
+    <!-- FAVICON and mobile icon support -->
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="mask-icon" href="./images/favicon.svg">
 </head>
 <body class="container">
-	<div id="top">
-	<header>
-	  <div id="brand" class="grid">
-	  	<div class="info grid__col grid__col--1-of-2 grid__col--m-1-of-2 grid__col--s-1-of-2">
-			  <h2 id="logotype"><a href="./index.html">josé raúl<br />pacheco</a></h2>
-			  <span id="tagline">Software Engineer, <a href="http://infoscout.co/">InfoScout</a></span><br/>
-			  <em>San Francisco</em>
-		  </div>
-		  <div id="contact" class="grid__col grid__col--1-of-2 grid__col--m-1-of-2 grid__col--s-1-of-2">
-			  <label>Contact</label>
-				<ul id="links">
-					<li>
-						<span class="ctct">linked</span><a href="https://linkedin.com/in/pachewise" id="linkedin" title="LinkedIn profile">@pachewise</a>
-					</li>
-					<li>
-						<span class="ctct">github</span><a href="https://github.com/pachewise" id="github" title="GitHub profile">@pachewise</a>
-					</li>
-					<li>
-						<span class="ctct">twitter</span><a href="https://twitter.com/pachewise" id="twitter" title="Twitter profile">@pachewise</a>
-					</li>
-					<li>
-						<a href="mailto:hi@jrpache.co" id="mail" title="e-mail">hi@jrpache.co</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header>
-	<nav>
-	<ul>
-	  <!-- hyphens represents my relative interest in the language at the moment  -->
-	  <li> -------- <a href="#python">python</a></li>
-	  <li> ----- <a href="#java">java</a></li>
-	  <li> -- <a href="#js">js</a></li>
-<!-- 	  <li> <a href="#txt">txt</a></li> -->
-	</ul>
-	</nav>
+<div id="top">
+    <header>
+        <div id="brand" class="grid">
+            <div class="info grid__col grid__col--1-of-2 grid__col--m-1-of-2 grid__col--s-1-of-2">
+                <h2 id="logotype"><a href="./index.html">josé raúl<br/>pacheco</a></h2>
+                Software <a href="http://infoscout.co/">@InfoScout</a><br/>
+                <em>San Francisco</em>
+            </div>
+            <div id="contact" class="grid__col grid__col--1-of-2 grid__col--m-1-of-2 grid__col--s-1-of-2">
+                <label>Contact</label>
+                <ul id="links">
+                    <li>
+                        <span class="contact">linked</span><a href="https://linkedin.com/in/pachewise" id="linkedin"
+                                                              title="LinkedIn profile">@pachewise</a>
+                    </li>
+                    <li>
+                        <span class="contact">github</span><a href="https://github.com/pachewise" id="github"
+                                                              title="GitHub profile">@pachewise</a>
+                    </li>
+                    <li>
+                        <span class="contact">twitter</span><a href="https://twitter.com/pachewise" id="twitter"
+                                                               title="Twitter profile">@pachewise</a>
+                    </li>
+                    <li>
+                        <a href="mailto:hi@jrpache.co" id="mail" title="e-mail">hi@jrpache.co</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="content" class="grid">
+    <div id="python" class="block grid__col grid__col--1-of-2">
+        <label>Python <sup title="My interest and experience in Python">5/5</sup></label>
+        <div class="blurb">
+            I've loved Python since I took <a href="https://sixohone.mit.edu">6.01</a> (Intro EECS).
+            We used it at MIT for research, for homework, and for doing Matlab work <a
+                href="https://matplotlib.org/">without Matlab</a>, and I've used it since for my scripts and projects.
+            I was a Lab Assistant for 6.01 and <a
+                href="https://web.mit.edu/6.02/">6.02</a> (Intro EECS II), and I helped teach an Intro to Python class
+            during our January period. I am a part of InfoScout's <a
+                href="http://infoscout.co/solutions/insights">Insights</a> team since Feb 2017, which means
+            working with <a href="https://www.djangoproject.com">Django</a>, <a
+                href="http://www.celeryproject.org">Celery</a>, <a href="https://www.sqlalchemy.org/">SQLAlchemy</a> and
+            <a href="http://pandas.pydata.org/">pandas</a>.
+        </div>
+    </div>
+    <div id="java" class="block grid__col grid__col--1-of-2">
+        <label>Java <sup title="My interest and experience in Java">3/5</sup></label>
+        <div class="blurb">I've worked with Java since 2011, when I took <a
+                href="http://web.mit.edu/6.005/">6.005</a> (I used Eclipse and <em>hated</em> it). After
+            college, I worked on the <a
+                    href="http://www.oracle.com/technetwork/developer-tools/adf/overview/index.html">ADF</a> Shared
+            Components (ADFShare) team at Oracle from July 2013 until January 2017. We used (and developed components
+            for)
+            <a href="http://www.oracle.com/technetwork/developer-tools/jdev/overview/index-094652.html">JDeveloper</a>;
+            one of my first projects at Oracle was adding internal static-member audits to JDeveloper. I have
+            my qualms about Java, but <a
+                    href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html">Java 8</a>
+            looks promising, with type annotations, lambda expressions and method references.
+        </div>
+    </div>
 
-	</div>
-	<div id="content" class="grid">
-		<div id="python" class="block grid__col">
-			<label>python</label>
-			<div class="blurb">
-			I loved Python ever since I was first introduced to it in my <a href="https://sixohone.mit.edu">Intro to EECS</a> class. We used it all the time at MIT: for research, for homework, for doing Matlab work <a href="https://matplotlib.org/">without Matlab</a>... Since then, I've used it as my main scripting language and in small projects. I was a Lab Assistant for that same EECS course and the one after it, <a href="https://web.mit.edu/6.02/">6.02</a>. I also helped with an Introduction to Python class during our January period. More recently, I've been learning how to build and deploy <a href="http://flask.pocoo.org">Flask</a> applications and experimenting with <a href="http://pandas.pydata.org/">pandas</a> and <a href="http://scikit-learn.org/">scikit-learn</a>. In February 2017, I joined the InfoScout <a href="http://infoscout.co/solutions/insights">Insights</a> team as a back-end engineer, which will involve working with <a href="https://www.djangoproject.com">Django</a>, <a href="http://www.celeryproject.org">Celery</a>, and other interesting tools.
-			</div>
-		</div>
-
-		<div id="java" class="block grid__col">
-			<label>java</label>
-			<div class="blurb"><p>I've worked with Java since 2011, ever since I took <a href="http://web.mit.edu/6.005/">6.005</a> (back then I used Eclipse and <em>hated</em> it). After college, I worked on the <a href="http://www.oracle.com/technetwork/developer-tools/adf/overview/index.html">ADF</a> Shared Components (ADFShare) team at Oracle, from July 2013 until January 2017. We used (and developed components for) <a href="http://www.oracle.com/technetwork/developer-tools/jdev/overview/index-094652.html">JDeveloper</a>. In fact, one of my first projects at Oracle was to add internal static-member audits to JDeveloper.</p> <p>I have my qualms about Java, but <a href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html">Java 8</a> is really promising, with type annotations, lambda expressions and method references.</p></div>
-		</div>
-
-		<div id="js" class="block grid__col">
-			<label>javascript</label>
-			<div class="blurb">I used to be anti-JS in my high-school days, but since then we've had <a href="http://jquery.org/">jQuery</a>, <a href="http://nodejs.org/">node</a>, and <a href="http://exploringjs.com">ES2015</a>. I've made my peace with it now, but I only use it when I need to.</div>
-		</div>
-	</div>
-	<footer>
-			&copy; 2014-2017 José R. Pacheco
-
-			<!-- JAVASCRIPT would be here, if I used any. Maybe in the future. -->
-
-
-	</footer>
+    <div id="js" class="block grid__col grid__col--1-of-2">
+        <label>JavaScript <sup title="My interest and experience in JavaScript">2/5</sup></label>
+        <div class="blurb">I used to be anti-JS in my high-school days, but since then we've had <a
+                href="http://jquery.org/">jQuery</a>, <a href="http://nodejs.org/">node</a>, <a
+                href="http://exploringjs.com">ES2015</a> and <a href="https://reactjs.org/">React</a>.
+            I've made my peace with it now, but I only use it when I need to (we use React for the Insights frontend).
+        </div>
+    </div>
+</div>
+<footer>
+    &copy; 2014-2017 José R. Pacheco
+    <!-- JAVASCRIPT would be here, if I used any. Maybe in the future. -->
+</footer>
 </body>
 </html>
