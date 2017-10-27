@@ -18,7 +18,7 @@ a {
 }
 
 h2 {
-    margin-top: 0;
+    margin: 0 0 0.8em 0;
 }
 
 h2 a {
@@ -28,7 +28,7 @@ h2 a {
 header {
     display: block;
     box-sizing: border-box;
-    padding: 4% 1% 1% 4%;
+    padding: 4% 4% 0 4%;
 }
 
 header ul {
@@ -127,7 +127,7 @@ footer {
 }
 
 #content {
-    padding: 2% 4% 0 4%;
+    padding: 2% 0 0 4%;
     width: 100%;
 }
 
@@ -135,7 +135,7 @@ footer {
     cursor: help;
 }
 
-.contact {
+.ctct {
     width: 60px;
     display: inline-block;
 }
