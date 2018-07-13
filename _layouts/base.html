@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Last UPDATE: 27 OCT 2017 -->
-    <!-- Always a work in progress! See something buggy? Send me an email at feedback@jrpache.co -->
-    <title>José R. Pacheco | software</title>
+    <!-- UPDATED {{ site.last_updated }} -->
+    <!-- Always a work in progress! See something buggy? Send me an email at {{ site.feedback_email }} -->
+    <title>{{ page.title }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="description" content="The official website of José R. Pacheco">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% assign metas = "author, designer, developer" | split: ", " %}
+    {% for meta in metas %}
+    <meta name="{{ meta }}" content="{{ site.author }}" />
+    {% endfor %}
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
@@ -20,35 +24,8 @@
     <link rel="mask-icon" href="./images/favicon.svg">
 </head>
 <body class="container">
-    <header id="top">
-        <div id="brand" class="grid">
-            <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
-                <h2 id="logotype"><a href="./index.html">josé raúl<br/>pacheco</a></h2>
-                Software <a href="http://infoscout.co/">@InfoScout</a><br/>
-                <em>San Francisco</em>
-            </div>
-            <div id="contact" class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
-                <label>Contact</label>
-                <ul id="links">
-                    <li>
-                        <span class="ctct">linked</span><a href="https://linkedin.com/in/pachewise" id="linkedin"
-                                                              title="LinkedIn profile">@pachewise</a>
-                    </li>
-                    <li>
-                        <span class="ctct">github</span><a href="https://github.com/pachewise" id="github"
-                                                              title="GitHub profile">@pachewise</a>
-                    </li>
-                    <li>
-                        <span class="ctct">twitter</span><a href="https://twitter.com/pachewise" id="twitter"
-                                                               title="Twitter profile">@pachewise</a>
-                    </li>
-                    <li>
-                        <a href="mailto:hi@jrpache.co" id="mail" title="e-mail">hi@jrpache.co</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+
+  {% include header.html contacts=site.data.media %}
 <div id="content" class="grid">
     <div id="python" class="block grid__col grid__col--1-of-2">
         <label>Python <sup title="My interest and experience in Python">5/5</sup></label>
@@ -90,9 +67,6 @@
         </div>
     </div>
 </div>
-<footer>
-    &copy; 2014-2017 José R. Pacheco
-    <!-- JAVASCRIPT would be here, if I used any. Maybe in the future. -->
-</footer>
+  {% include footer.html %}
 </body>
 </html>

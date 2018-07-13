@@ -1,0 +1,11 @@
+- name: linkedin
+  url: https://linkedin.com/in/
+  username: pachewise
+
+- name: github
+  url: https://github.com/
+  username: pachewise
+
+- name: twitter
+  url: https://twitter.com/
+  username: pachewise
