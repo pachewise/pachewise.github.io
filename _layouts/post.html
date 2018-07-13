@@ -1,0 +1,10 @@
+---
+layout: base
+---
+<div id="entry" class="block grid__col grid__col--1-of-1">
+  <label>{{ page.title }}</label>
+  <span class="date">{{ page.date | date: "%d %b %Y %H:%M %Z"}}</span>
+  <div class="blurb">
+    {{ content }}
+  </div>
+</div>

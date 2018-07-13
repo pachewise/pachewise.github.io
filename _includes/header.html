@@ -1,26 +1,34 @@
 {% assign personal = site.data.personal %}
 <header id="top">
-    <div id="brand" class="grid">
-        <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
-            <h2 id="logotype"><a href="./index.html">josé raúl<br/>pacheco</a></h2>
-            {{ personal.position }} <a href="{{ site.company_url }}">@{{ personal.company }}</a><br/>
-            <em>San Francisco</em>
-        </div>
-        <div id="contact" class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
-            <label>Contact</label>
-            <ul id="links">
-                {% for contact in include.contacts %}
-                <li>
-                    <span class="ctct">{{ contact.name }}</span>
-                    <a href="{{ contact.url }}{{ contact.username }}"
-                       id="{{ contact.name }}"
-                       title="{{ contact.name | capitalize }}">@{{ contact.username }}</a>
-                </li>
-                {% endfor %}
-                <li>
-                    <a href="mailto:{{ site.email }}" id="mail" title="e-mail">{{ site.email }}</a>
-                </li>
-            </ul>
-        </div>
+  <div id="brand" class="grid">
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+      <h2 id="logotype"><a href="{{ site.baseurl }}">josé raúl<br/>pacheco</a></h2>
+      {{ personal.position }} <a href="{{ site.company_url }}">@{{ personal.company }}</a><br/>
+      <em>San Francisco</em>
     </div>
+    <div id="contact" class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+      <label>CONTACT</label>
+      <ul id="links">
+        {% for contact in include.contacts %}
+        <li>
+          <span class="ctct">{{ contact.name }}</span>
+          <a href="{{ contact.url }}{{ contact.username }}"
+             id="{{ contact.name }}"
+             title="{{ contact.name | capitalize }}">@{{ contact.username }}</a>
+        </li>
+        {% endfor %}
+        <li>
+          <a href="mailto:{{ site.email }}" id="mail" title="e-mail">{{ site.email }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+      <ul>
+        <label>Topics</label>
+        {% for tag in site.tags %}
+          <li><a href="/tag/{{ tag | first }}.html">{{ tag | first }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </header>
