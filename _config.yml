@@ -1,9 +1,9 @@
 # Site settings
 last_updated: 12 jul 2018
-title: 'josé r. pacheco | software'
+title: 'josé pacheco | software'
 title_abbrev: jrpache.co
 description: >- # this means to ignore newlines until "baseurl:"
-  The official website of José R. Pacheco, software developer at InfoScout
+  The official website of José Pacheco, senior software engineer at Numerator
 baseurl: ""
 url: ""
 
