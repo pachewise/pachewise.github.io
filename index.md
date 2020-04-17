@@ -2,8 +2,8 @@
 layout: base
 sections:
   - python.html
-  - java.html
   - js.html
+  - java.html
 ---
 {% for section in page.sections %}
   {% include {{ section }} %}
