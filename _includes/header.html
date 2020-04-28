@@ -6,7 +6,7 @@
       {{ personal.position }} <a href="{{ personal.company_url }}">@{{ personal.company }}</a><br/>
       <em>San Francisco</em>
     </div>
-    <div id="contact" class="grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+    <div id="contact">
       <ul id="links">
         {% for contact in include.contacts %}
         <li>
@@ -22,7 +22,7 @@
       </ul>
     </div>
     {% if site.tags.size > 0 %}
-    <div id="topics" class="grid__col grid__col--2-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+    <div id="topics">
         <label>Topics</label>
         <ul>
         {% for tag in site.tags %}
