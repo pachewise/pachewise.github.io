@@ -3,19 +3,22 @@
 @charset "utf-8";
 
 @import "normalize";
-@import "grid";
 
 * {
     box-sizing: border-box;
 }
 
+$reg-space: 3em;
+
 body {
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
     text-rendering: optimizeLegibility;
-    margin: 0 auto;
-    width: auto;
     height: 100%;
-    padding: 3em;
+    max-width: 900px;
+    padding: $reg-space;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul {
@@ -35,9 +38,8 @@ h2 a {
 }
 
 header {
-    display: block;
     box-sizing: border-box;
-    padding: 3% 0 0 0;
+    margin-bottom: $reg-space;
 }
 
 header ul {
@@ -63,29 +65,20 @@ label {
     display: block;
 }
 
+#brand {
+    display: flex;
+    flex-direction: row;
+}
+
 #logotype {
     display: block;
     box-sizing: border-box;
     width: 5em;
+    margin-right: $reg-space;
 }
 
 #logotype a {
     text-decoration: none;
-}
-
-nav {
-    margin: 2% 0 4% 4%;
-}
-
-nav li, nav ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0px 8px 0px 0px;
 }
 
 footer {
@@ -131,13 +124,19 @@ $col-count: 3;
     text-transform: lowercase;
     font-size: 1.4em;
     letter-spacing: 0;
-    padding: 0;
+    padding: 0 0 .5em 0;
     margin: 0;
 }
 
+.block:not(:first-child) {
+    margin-top: $reg-space;
+}
+
 #content {
-    padding: 2% 0 0 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content sup {
@@ -150,8 +149,6 @@ $col-count: 3;
 }
 
 .blurb {
-    margin: 2% 0;
     line-height: 1.5em;
     text-align: justify;
-    width: 90%;
 }
