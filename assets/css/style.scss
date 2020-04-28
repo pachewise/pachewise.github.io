@@ -14,9 +14,8 @@ body {
     text-rendering: optimizeLegibility;
     margin: 0 auto;
     width: auto;
-    max-width: 900px;
     height: 100%;
-    padding: 0;
+    padding: 3em;
 }
 
 ul {
@@ -38,7 +37,7 @@ h2 a {
 header {
     display: block;
     box-sizing: border-box;
-    padding: 3% 3% 0 3%;
+    padding: 3% 0 0 0;
 }
 
 header ul {
@@ -137,7 +136,7 @@ $col-count: 3;
 }
 
 #content {
-    padding: 2% 3% 0 4%;
+    padding: 2% 0 0 0;
     width: 100%;
 }
 
