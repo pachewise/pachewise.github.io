@@ -992,6 +992,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eleventy-sass@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "eleventy-sass@npm:2.1.2"
+  dependencies:
+    debug: ^4.3.3
+    kleur: ^4.1.4
+    sass: ^1.49.7
+  peerDependencies:
+    "@11ty/eleventy": ^1.0.0 || ^2.0.0-canary.12
+    eleventy-plugin-clean: ^1.1.0
+    eleventy-plugin-rev: ^1.0.2
+  peerDependenciesMeta:
+    eleventy-plugin-clean:
+      optional: true
+    eleventy-plugin-rev:
+      optional: true
+  checksum: 40a8751fd121502591d26b4104a71c841e8ae58fee85bac8e1ec58c2aa68668d8886b44704618312cee62006888c18dc36e14be0ce36c56cfb000c1f1d4e9213
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^8.0.0":
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
@@ -1824,7 +1844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kleur@npm:^4.1.5":
+"kleur@npm:^4.1.4, kleur@npm:^4.1.5":
   version: 4.1.5
   resolution: "kleur@npm:4.1.5"
   checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
@@ -2345,6 +2365,7 @@ __metadata:
   resolution: "pachewise.github.io@workspace:."
   dependencies:
     "@11ty/eleventy": ^1.0.2
+    eleventy-sass: ^2.1.2
     sass: ^1.54.9
   languageName: unknown
   linkType: soft
@@ -2797,7 +2818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.54.9":
+"sass@npm:^1.49.7, sass@npm:^1.54.9":
   version: 1.54.9
   resolution: "sass@npm:1.54.9"
   dependencies:

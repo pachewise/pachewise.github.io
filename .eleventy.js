@@ -1,5 +1,9 @@
+const sass = require("sass");
+const eleventySass = require("eleventy-sass");
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPlugin(eleventySass);
+  eleventyConfig.addPassthroughCopy("assets/img");
   eleventyConfig.addPassthroughCopy("CNAME");
   return {
     dir: {
