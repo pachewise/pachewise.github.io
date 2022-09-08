@@ -8,5 +8,6 @@ module.exports = function (eleventyConfig) {
       layouts: "./_layouts",
     },
     templateFormats: ["html", "liquid", "md", "njk"],
+    passthroughFileCopy: true,
   };
 };

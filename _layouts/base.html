@@ -29,10 +29,10 @@
 </head>
 <body class="container">
 
-{% include header.html contacts=site.data.media %}
+{% include "header.html", contacts: site.data.media %}
 <div id="content">
   {{ content }}
 </div>
-{% include footer.html %}
+{% include "footer.html" %}
 </body>
 </html>

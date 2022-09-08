@@ -5,6 +5,7 @@ sections:
   - js.html
   - java.html
 ---
+
 {% for section in page.sections %}
-  {% include {{ section }} %}
+{% include "{{ section }}" %}
 {% endfor %}
