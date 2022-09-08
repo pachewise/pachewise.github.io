@@ -4,7 +4,10 @@
   "description": "Pacheco's personal page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./_site",
+    "build": "yarn clean && eleventy",
+    "start": "eleventy --serve --watch"
   },
   "repository": {
     "type": "git",
