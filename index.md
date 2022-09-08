@@ -6,6 +6,6 @@ sections:
   - java.html
 ---
 
-{% for section in page.sections %}
+{% for section in sections %}
 {% include "{{ section }}" %}
 {% endfor %}
