@@ -150,3 +150,12 @@ $col-count: 3;
     line-height: 1.5em;
     text-align: justify;
 }
+
+.gh-source {
+    display: inline-flex;
+    justify-content: space-between;
+
+    svg {
+        margin-left: 0.2rem;
+    }
+}
