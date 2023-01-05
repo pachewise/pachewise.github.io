@@ -992,9 +992,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-sass@npm:^2.1.3":
-  version: 2.1.3
-  resolution: "eleventy-sass@npm:2.1.3"
+"eleventy-sass@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "eleventy-sass@npm:2.1.4"
   dependencies:
     debug: ^4.3.3
     kleur: ^4.1.4
@@ -1008,7 +1008,7 @@ __metadata:
       optional: true
     eleventy-plugin-rev:
       optional: true
-  checksum: 03528b10a89c0584b3ce6dd040b6466b22605bb070d6f104060bed40c2f9af567bc630664d25b1a61829787c055167af1d1d0dce9d712c6c8ce2a8e3e2179a14
+  checksum: 6f6ef91789fb1782d2bd66df08247bbe885ea50bfc5e624105bd8ea7bc8b62fa6db157e36643b36a77c0b4953a8f5d26cc059496245fe1036fd265641f33a7a7
   languageName: node
   linkType: hard
 
@@ -2372,7 +2372,7 @@ __metadata:
   resolution: "pachewise.github.io@workspace:."
   dependencies:
     "@11ty/eleventy": ^1.0.2
-    eleventy-sass: ^2.1.3
+    eleventy-sass: ^2.1.4
     sass: ^1.57.1
   languageName: unknown
   linkType: soft
