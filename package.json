@@ -22,9 +22,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.4.1",
   "dependencies": {
-    "eleventy-sass": "^2.1.4",
-    "sass": "^1.57.1"
+    "eleventy-sass": "^2.1.7",
+    "sass": "^1.58.0"
   }
 }

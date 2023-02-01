@@ -992,15 +992,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-sass@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "eleventy-sass@npm:2.1.4"
+"eleventy-sass@npm:^2.1.7":
+  version: 2.1.7
+  resolution: "eleventy-sass@npm:2.1.7"
   dependencies:
     debug: ^4.3.3
     kleur: ^4.1.4
     sass: ^1.49.7
   peerDependencies:
-    "@11ty/eleventy": ^1.0.0 || ^2.0.0-canary.12
+    "@11ty/eleventy": ^1.0.0 || ^2.0.0-canary.12 || ^2.0.0-beta.1
     eleventy-plugin-clean: ^1.1.0
     eleventy-plugin-rev: ^1.0.2
   peerDependenciesMeta:
@@ -1008,7 +1008,7 @@ __metadata:
       optional: true
     eleventy-plugin-rev:
       optional: true
-  checksum: 6f6ef91789fb1782d2bd66df08247bbe885ea50bfc5e624105bd8ea7bc8b62fa6db157e36643b36a77c0b4953a8f5d26cc059496245fe1036fd265641f33a7a7
+  checksum: 8349c7ed9bdb94530fb56c1bcc3fe6f0752f758374ef4f9ba64dfd713c8ccee1acc5a992fb0b10a2e909cda1cd6881bb56328587b00dae9f8cfc51c3e97fa2c0
   languageName: node
   linkType: hard
 
@@ -1284,7 +1284,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -2372,8 +2372,8 @@ __metadata:
   resolution: "pachewise.github.io@workspace:."
   dependencies:
     "@11ty/eleventy": ^1.0.2
-    eleventy-sass: ^2.1.4
-    sass: ^1.57.1
+    eleventy-sass: ^2.1.7
+    sass: ^1.58.0
   languageName: unknown
   linkType: soft
 
@@ -2731,7 +2731,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.15.1#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -2827,29 +2827,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.7":
-  version: 1.54.9
-  resolution: "sass@npm:1.54.9"
+"sass@npm:^1.49.7, sass@npm:^1.58.0":
+  version: 1.58.0
+  resolution: "sass@npm:1.58.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 90182b566072b48e2263c5a87229ab85164e13b71b24847ba76a8e68eb952cb69a7dcef815f4ccc0189dd2d0c254311acff6972166603338d33bbc96f6d500c6
-  languageName: node
-  linkType: hard
-
-"sass@npm:^1.57.1":
-  version: 1.57.1
-  resolution: "sass@npm:1.57.1"
-  dependencies:
-    chokidar: ">=3.0.0 <4.0.0"
-    immutable: ^4.0.0
-    source-map-js: ">=0.6.2 <2.0.0"
-  bin:
-    sass: sass.js
-  checksum: 734a08781bcbe0e8defb2d54864e7012014ed3e68ba5fcb766189b002929019fc37b2f83a18d4be0b5f69ad77317c92396ce6112447ab47a194ed600ae1afb27
+  checksum: a7219634881d2de6441fb619787fb1a02e3fa0333fb715be26aa335ba49d6bdb4f1105d9df70a80a67200893022b08346745783dc49046095d94fc6e044492d6
   languageName: node
   linkType: hard
 
@@ -3303,11 +3290,11 @@ __metadata:
 
 "typescript@patch:typescript@^4.6.2#~builtin<compat/typescript>":
   version: 4.8.2
-  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
+  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=3b564f"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5cb0f02f414f5405f4b0e7ee1fd7fa9177b6a8783c9017b6cad85f56ce4c4f93e0e6f2ce37e863cb597d44227cd009474c9fbd85bf7a50004e5557426cb58079
+  checksum: 28e130a49d9330b64b8229ad336247bf980e9a705c5850f30a859a68c051e8e68e367b3275f119da4a825dca71ad0fe315964a1315d4a381c0021bca5eeeb62e
   languageName: node
   linkType: hard
 
