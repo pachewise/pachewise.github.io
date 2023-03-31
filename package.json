@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/pachewise/pachewise.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^2.0.1"
   },
   "packageManager": "yarn@3.4.1",
   "dependencies": {
-    "eleventy-sass": "^2.1.7",
-    "sass": "^1.58.0"
+    "eleventy-sass": "^2.2.1",
+    "sass": "^1.60.0"
   }
 }
