@@ -772,9 +772,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-sass@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "eleventy-sass@npm:2.2.1"
+"eleventy-sass@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "eleventy-sass@npm:2.2.4"
   dependencies:
     debug: ^4.3.3
     kleur: ^4.1.4
@@ -782,13 +782,13 @@ __metadata:
   peerDependencies:
     "@11ty/eleventy": ^1.0.0 || ^2.0.0-canary.12 || ^2.0.0-beta.1
     eleventy-plugin-clean: ^1.1.0
-    eleventy-plugin-rev: ^1.1.1
+    eleventy-plugin-rev: ^2.0.0
   peerDependenciesMeta:
     eleventy-plugin-clean:
       optional: true
     eleventy-plugin-rev:
       optional: true
-  checksum: 6e881c7217afb075602af3996c7d71312ecc51acfcd4882499c24a6e8ff8a550db0fd5f4113842cd43a4d03932989b3f85cdbb4e5886f2bee9200f4e8701d23b
+  checksum: 27676d3d3ad434ed8e0c86bc80ecad0ab530c32d0fce39c02ccb7d5138b083417189c616b5517a4f6dc302d881934ad4e769998d986be8a6a7312b889afd11d6
   languageName: node
   linkType: hard
 
@@ -1054,14 +1054,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.4, graceful-fs@npm:^4.2.6":
-  version: 4.2.10
-  resolution: "graceful-fs@npm:4.2.10"
-  checksum: 3f109d70ae123951905d85032ebeae3c2a5a7a997430df00ea30df0e3a6c60cf6689b109654d6fdacd28810a053348c4d14642da1d075049e6be1ba5216218da
-  languageName: node
-  linkType: hard
-
-"graceful-fs@npm:^4.2.11":
+"graceful-fs@npm:^4.1.4, graceful-fs@npm:^4.2.11, graceful-fs@npm:^4.2.6":
   version: 4.2.11
   resolution: "graceful-fs@npm:4.2.11"
   checksum: ac85f94da92d8eb6b7f5a8b20ce65e43d66761c55ce85ac96df6865308390da45a8d3f0296dd3a663de65d30ba497bd46c696cc1e248c72b13d6d567138a4fc7
@@ -1619,14 +1612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.5, minimist@npm:^1.2.6":
-  version: 1.2.6
-  resolution: "minimist@npm:1.2.6"
-  checksum: d15428cd1e11eb14e1233bcfb88ae07ed7a147de251441d61158619dfb32c4d7e9061d09cab4825fdee18ecd6fce323228c8c47b5ba7cd20af378ca4048fb3fb
-  languageName: node
-  linkType: hard
-
-"minimist@npm:^1.2.8":
+"minimist@npm:^1.2.5, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
@@ -1908,8 +1894,8 @@ __metadata:
   resolution: "pachewise.github.io@workspace:."
   dependencies:
     "@11ty/eleventy": ^2.0.1
-    eleventy-sass: ^2.2.1
-    sass: ^1.60.0
+    eleventy-sass: ^2.2.4
+    sass: ^1.77.4
   languageName: unknown
   linkType: soft
 
@@ -2323,29 +2309,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.7":
-  version: 1.58.0
-  resolution: "sass@npm:1.58.0"
+"sass@npm:^1.49.7, sass@npm:^1.77.4":
+  version: 1.77.4
+  resolution: "sass@npm:1.77.4"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: a7219634881d2de6441fb619787fb1a02e3fa0333fb715be26aa335ba49d6bdb4f1105d9df70a80a67200893022b08346745783dc49046095d94fc6e044492d6
-  languageName: node
-  linkType: hard
-
-"sass@npm:^1.60.0":
-  version: 1.60.0
-  resolution: "sass@npm:1.60.0"
-  dependencies:
-    chokidar: ">=3.0.0 <4.0.0"
-    immutable: ^4.0.0
-    source-map-js: ">=0.6.2 <2.0.0"
-  bin:
-    sass: sass.js
-  checksum: 06e163c37af466ec194cf2ed8dab616372afeb19322d356947d48ea664fc38398ae77c4d91bea9cb0ace954ce289d5518d0f8555ecc49f6bf2539a8ef52fc580
+  checksum: 415d76960e35d78310ffc33bc61fdb2b35a54bb2823dfc4eff50eee960096dacc210d7ef7ae6695120e1a4f005f269719c34d58c77c54ff7787516bda6a89e55
   languageName: node
   linkType: hard
 
