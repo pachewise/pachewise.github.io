@@ -16,6 +16,7 @@
   <meta charset="utf-8">
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="{{ eleventy.generator }}">
   {% assign metas = "author, designer, developer" | split: ", " %}
   {% for meta in metas %}
   <meta name="{{ meta }}" content="{{ site.author }}"/>

@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/pachewise/pachewise.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-beta.1"
+    "@11ty/eleventy": "v3.0.0-alpha.20"
   },
-  "packageManager": "yarn@4.3.0",
+  "packageManager": "yarn@4.4.1",
   "dependencies": {
-    "eleventy-sass": "^2.2.6",
+    "@11ty/eleventy-upgrade-help": "3",
     "sass": "^1.78.0"
   }
 }
