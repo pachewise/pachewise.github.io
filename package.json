@@ -24,7 +24,7 @@
   },
   "packageManager": "yarn@4.3.0",
   "dependencies": {
-    "eleventy-sass": "^2.2.4",
-    "sass": "^1.77.4"
+    "eleventy-sass": "^2.2.6",
+    "sass": "^1.78.0"
   }
 }
