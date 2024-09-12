@@ -58,19 +58,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy-upgrade-help@npm:3":
-  version: 3.0.1
-  resolution: "@11ty/eleventy-upgrade-help@npm:3.0.1"
-  dependencies:
-    fast-glob: "npm:^3.3.2"
-    kleur: "npm:^4.1.5"
-    minimist: "npm:^1.2.8"
-    posthtml-match-helper: "npm:^2.0.2"
-    semver: "npm:^7.6.3"
-  checksum: 10/a1bdecfeac79b265d77f0969fe81171103c5066ce90c7c8e9c961d6c5c7a7029fde57831cd0963a93ad7a76932ed09f7434b828e6c42bd493049a3e82c18db0e
-  languageName: node
-  linkType: hard
-
 "@11ty/eleventy-utils@npm:^1.0.2, @11ty/eleventy-utils@npm:^1.0.3":
   version: 1.0.3
   resolution: "@11ty/eleventy-utils@npm:1.0.3"
@@ -1788,7 +1775,6 @@ __metadata:
   resolution: "pachewise.github.io@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:v3.0.0-alpha.20"
-    "@11ty/eleventy-upgrade-help": "npm:3"
     sass: "npm:^1.78.0"
   languageName: unknown
   linkType: soft

@@ -24,7 +24,6 @@
   },
   "packageManager": "yarn@4.4.1",
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "3",
     "sass": "^1.78.0"
   }
 }

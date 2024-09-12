@@ -1,7 +1,5 @@
 const sass = require("sass");
 const path = require("node:path");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addTemplateFormats("scss");
@@ -35,8 +33,6 @@ module.exports = function (eleventyConfig) {
 	});
   eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("CNAME");
-
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     dir: {
