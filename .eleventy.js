@@ -1,4 +1,3 @@
-import Upgrade from "@11ty/eleventy-upgrade-help";
 import * as sass from "sass";
 import * as path from "node:path";
 
@@ -36,13 +35,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("CNAME");
 
-  eleventyConfig.addPlugin(Upgrade);
-
   return {
     dir: {
       input: "src",
       output: "./_site",
-      layouts: "./_layouts",
     },
     templateFormats: ["html", "liquid", "md", "njk"],
     passthroughFileCopy: true,

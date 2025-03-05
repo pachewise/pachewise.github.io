@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Python",
+      "tagline": "My bread and butter.",
+      "experience": [
+        {
+            "title": "MIT (Lab Assistant)",
+            "url": "https://web.mit.edu/6.01/www/"
+        },
+        {
+            "title": "Numerator",
+            "url": "https://www.numerator.com/"
+        },
+        {
+            "title": "Seek AI",
+            "url": "https://seek.ai"
+        }
+      ],
+      "oss": [
+        {
+            "title": "celery",
+            "url": "https://github.com/celery/celery/pulls?q=is:pr+author:pachewise+"
+        },
+        {
+            "title": "FastAPI",
+            "url": "https://github.com/fastapi/fastapi/pulls?q=is:pr+author:pachewise+"
+        },
+        {
+            "title": "pyJWT",
+            "url": "https://github.com/jpadilla/pyjwt/pulls?q=is:pr+author:pachewise+"
+        }
+      ]
+    },
+    {
+        "name": "TypeScript",
+        "tagline": "JavaScript is \"dead\"; Long live TypeScript.",
+        "experience": [
+            {
+                "title": "Seek AI",
+                 "url": "https://seek.ai"
+            }
+        ],
+        "oss": []
+    },
+    {
+        "name": "Rust",
+        "tagline": "Your favorite language's favorite language.",
+        "experience": [],
+        "oss": []
+    }
+]

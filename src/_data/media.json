@@ -10,8 +10,13 @@
     "username": "pachewise"
   },
   {
-    "name": "insta",
+    "name": "instagram",
     "url": "https://instagram.com/",
+    "username": "pachewise"
+  },
+  {
+    "name": "substack",
+    "url": "https://pachewise.substack.com/",
     "username": "pachewise"
   }
 ]
