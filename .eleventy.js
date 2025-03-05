@@ -1,7 +1,9 @@
-const sass = require("sass");
-const path = require("node:path");
+import Upgrade from "@11ty/eleventy-upgrade-help";
+import * as sass from "sass";
+import * as path from "node:path";
 
-module.exports = function (eleventyConfig) {
+
+export default async function (eleventyConfig) {
   eleventyConfig.addTemplateFormats("scss");
   // Creates the extension for use
 	eleventyConfig.addExtension("scss", {
@@ -33,6 +35,8 @@ module.exports = function (eleventyConfig) {
 	});
   eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("CNAME");
+
+  eleventyConfig.addPlugin(Upgrade);
 
   return {
     dir: {
