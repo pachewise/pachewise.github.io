@@ -38,7 +38,7 @@
   <div id="brand">
     <div id="logo">
       <h2 id="logotype"><a href="">josé <br/>pacheco</a></h2>
-      On Break<br/>
+      (Freelancing)<br/>
       <em>Brooklyn</em>
     </div>
     <div id="contact">
@@ -59,10 +59,17 @@
         </li>
         
         <li>
-          <span class="ctct">insta</span>
+          <span class="ctct">instagram</span>
           <a href="https://instagram.com/pachewise"
-             id="insta"
-             title="Insta">@pachewise</a>
+             id="instagram"
+             title="Instagram">@pachewise</a>
+        </li>
+        
+        <li>
+          <span class="ctct">substack</span>
+          <a href="https://pachewise.substack.com/pachewise"
+             id="substack"
+             title="Substack">@pachewise</a>
         </li>
         
         <li>
@@ -71,47 +78,110 @@
       </ul>
     </div>
   </div>
+  <div id="photo">
+    <figure>
+      <img height="150" width="150" src="assets/img/me.jpg" />
+      <figcaption>(me)</figcaption>
+    </figure>
+    </div>
 </header>
 
 <div id="content">
+  <nav>
+<span>I know:</span>
+<a href="#python">Python</a>
+<a href="#typescript">TypeScript</a>
+<a href="#rust">Rust</a>
+</nav>
   <div id="python" class="block">
-  <label>Python <sup title="My interest and experience in Python">5/5</sup></label>
-  <div class="blurb">
-    I've loved Python since I took <a href="https://sixohone.mit.edu">6.01</a> (Intro EECS) in 2010.
-    We used it at MIT for research, for homework, and for doing Matlab work <a
-    href="https://matplotlib.org/">without Matlab</a>. I also use it for my personal scripts and projects.
-    I was a Lab Assistant for 6.01 and <a
-    href="https://web.mit.edu/6.02/">6.02</a> (Intro EECS II), and I helped teach an Intro to Python class
-    during our January period. I have been part of the <a
-    href="https://www.numerator.com/solutions/people-and-shopper-insights">Numerator Insights</a> (formerly InfoScout Insights) team since Feb 2017, which means
-    working with <a href="https://www.djangoproject.com">Django</a>, <a
-    href="http://www.celeryproject.org">Celery</a>, <a href="https://www.sqlalchemy.org/">SQLAlchemy</a> and
-    <a href="http://pandas.pydata.org/">pandas</a> in Python 3.6 (gotta love f-strings). Already using Python 3.8 in some of our projects, and hoping to upgrade our main repos to either 3.8 or 3.9 this year.
-  </div>
+    <h2>Python</h2>
+    <em>My bread and butter.</em>
+    <div>
+        <div class="blurb">
+            <p>I've loved Python since I took <a href="https://sixohone.mit.edu">6.01</a> (Intro EECS) in 2010.
+We used it at MIT for research, for homework, and for doing Matlab work <a
+href="https://matplotlib.org/">without Matlab</a>. It's also my default language for scripts and projects. At MIT,
+I was a Lab Assistant for 6.01, <a
+href="https://web.mit.edu/6.02/">6.02</a> (Intro EECS II), and <a href="https://web.mit.edu/6.s189/www/index.html">6.S189</a> (Intro to Python).</p>
+<p>At <a
+href="https://www.numerator.com/">Numerator</a> (formerly InfoScout), I worked as a Backend Engineer, using
+working with <a href="https://www.djangoproject.com">Django</a>, <a
+href="http://www.celeryproject.org">Celery</a>, <a href="https://www.sqlalchemy.org/">SQLAlchemy</a> and
+<a href="http://pandas.pydata.org/">pandas</a>. As the company grew, I was moved to lead the Insights and Data Engineering Orgs,
+but I was still using Python for small tickets and scripts. </p>
+<p>At <a href="https://seek.ai">Seek AI</a>, I contributed to the Python codebase (even as a VP of Eng),
+  adding linting, writing tests, reviewing PRs and tackling some of the more obscure bugs.
+</p>
+<p>Throughout my career, I've taken on Open-Source and freelance projects using Python, and continue to contribute to that community. </p>
+<p></div>
+<div class="examples">
+Selected Experience
+<ul>
+<li>
+<a href="https://web.mit.edu/6.01/www/">MIT (Lab Assistant)</a>
+</li>
+<li>
+<a href="https://www.numerator.com/">Numerator</a>
+</li>
+<li>
+<a href="https://seek.ai">Seek AI</a>
+</li>
+</ul>
+Open-Source Projects
+<ul>
+<li>
+<a href="https://github.com/celery/celery/pulls?q=is:pr+author:pachewise+">celery</a>
+</li>
+<li>
+<a href="https://github.com/fastapi/fastapi/pulls?q=is:pr+author:pachewise+">FastAPI</a>
+</li>
+<li>
+<a href="https://github.com/jpadilla/pyjwt/pulls?q=is:pr+author:pachewise+">pyJWT</a>
+</li>
+</ul>
 </div>
-<div id="js" class="block">
-  <label>JavaScript <sup title="My interest and experience in JavaScript">4/5</sup></label>
-  <div class="blurb">I used to be anti-JS in my high-school days, but since then we've had <a
-    href="http://jquery.org/">jQuery</a>, <a href="http://nodejs.org/">node</a>, <a
-    href="http://exploringjs.com">ES2015</a> and <a href="https://reactjs.org/">React</a>.
-    Joining the Insights team has increased my appreciation for React and JavaScript, and leading
-    the team since Nov 2019 has forced me to sharpen my React and Redux skills. I can fend for myself
-    in JavaScript now, though there are still a <em>lot</em> of things that frustrate me (dependency hell, too many props). Currently working through Josh Comeau's <a href="https://css-for-js.dev/">CSS for JS</a> course.
-  </div>
+</div></p>
 </div>
-<div id="java" class="block">
-  <label>Java <sup title="My interest and experience in Java">3/5</sup></label>
-  <div class="blurb">I've worked with Java since 2011, when I took <a
-    href="http://web.mit.edu/6.005/">6.005</a> (I used Eclipse and <em>hated</em> it). After
-    college, I worked on the <a
-      href="http://www.oracle.com/technetwork/developer-tools/adf/overview/index.html">ADF</a> Shared
-    Components (ADFShare) team at Oracle from July 2013 until January 2017. We used (and developed components
-    for)
-    <a href="http://www.oracle.com/technetwork/developer-tools/jdev/overview/index-094652.html">JDeveloper</a>;
-    one of my first projects at Oracle was adding internal static-member audits to JDeveloper. I have
-    my qualms about Java, but the language itself has been getting better (don't get me started on the 
-    <a href="https://medium.com/@javachampions/java-is-still-free-2-0-0-6b9aa8d6d244">licensing and distribution</a> :\).
-  </div>
+  <div id="typescript" class="block">
+    <h2>TypeScript</h2>
+    <em>JavaScript is "dead"; Long live TypeScript.</em>
+    <div>
+        <div class="blurb">
+            <p>I used to be anti-JS in my high-school days, but <a
+href="http://jquery.org/">jQuery</a>, <a
+href="http://exploringjs.com">ES2015</a> and <a href="https://reactjs.org/">React</a> started to change my opinion.
+<p>Joining the Insights team at <a href="https://numerator.com">Numerator</a> increased my appreciation for React and JavaScript, particularly
+while I was Senior Director, with the Frontend Team Lead reporting to me (and having to fill that Team Lead role while we hired one).</p>
+<p>At <a href="https://seek.ai/">Seek</a>, I worked with FE engineers on a React/TS + Next.js UI using Radix UI components. </p>
+<p>Since the webpack days, TypeScript has arrived and build tools like CRA and vite have made bundling JS less painful. The React/TS + Python BE
+stack is very popular these days, so I still continue to take on projects that require TS. <a href="https://testing-library.com/">@testing-library</a>
+is one of my favorite installs ever. I haven't really contributed to the OSS community for TS in the past,
+but I'm currently building a React/TS + Vite Frontend for a future OSS project, and I'm open to working on other TS projects should they need my help.</p>
+<p></div>
+<div class="examples">
+Selected Experience
+<ul>
+<li>
+<a href="https://seek.ai">Seek AI</a>
+</li>
+</ul>
+</div>
+</div></p>
+</div>
+  <div id="rust" class="block">
+    <h2>Rust</h2>
+    <em>Your favorite language's favorite language.</em>
+    <div>
+        <div class="blurb">
+            <p>The latest trend is to write in Rust, and create bindings for your main language (for example, Python).
+    I'm still very new to Rust, and the idiosyncracies are a little confusing, but I'm learning quickly. I'm currently
+    working on a project with has a lot of Rust code, and so it's given me a chance to practice making small fixes.
+</p>
+<p></div>
+<div class="examples">
+<em>No experience I can share yet; but getting there!</em>
+</div>
+</div></p>
 </div>
 
 </div>
