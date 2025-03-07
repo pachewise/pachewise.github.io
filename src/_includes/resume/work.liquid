@@ -1,0 +1,26 @@
+<section>
+  <h2>Experience</h2>
+  {%- for exp in experience %}
+    <section>
+      <header>
+        <h3>{{ exp.position }}</h3>
+        <span>{{ exp.name }}</span>
+        <span class="date">
+          {% if exp.period -%}
+            {{ exp.period }}
+          {%- else -%}
+            {{ exp.startDate | date: "%Y %b", 0 }} &ndash;&nbsp;{{ exp.endDate | date: "%Y %b", 0 }}
+          {%- endif %}
+        </span>
+      </header>
+      <ul>
+        <li>{{ exp.summary }}</li>
+        {%- for highlight in exp.highlights %}
+          <li>
+            {{ highlight }}
+          </li>
+        {%- endfor %}
+      </ul>
+    </section>
+  {%- endfor %}
+</section>

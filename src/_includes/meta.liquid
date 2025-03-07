@@ -1,9 +1,6 @@
 {% # Original Source: https://github.com/maxboeck/resume/blob/9c177fcb8abc315514e57e2701152871a529e2be/src/includes/meta.njk %}
 {% assign absolutePageUrl = "https://" | append: meta.url | append: page.url %}
-{% assign pageTitle = me.name %}
-{% if me.title %}
-    {% assign pageTitle = pageTitle | append: " - " | append: resume.basics.label %}
-{% endif %}
+{% assign pageTitle = me.name | append: " - " | append: resume.basics.label %}
 {% if me.location %}
     {% assign pageTitle = pageTitle | append: " in " | append: me.location.city %}
 {% endif %}

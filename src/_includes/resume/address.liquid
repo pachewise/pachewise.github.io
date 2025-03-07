@@ -1,13 +1,15 @@
 <address>
   {%- for profile in basics.profiles -%}
+  {%- unless profile.type == "casual" %}
   <a href="{{ profile.url }}">
-    {{- profile.network -}}
+   {{- profile.network -}}
   </a>
+  {%- endunless %}
   {%- endfor -%}
 
   {% if basics.url -%}
-  <a href="https://{{ basics.url }}">
-    {{- basics.url -}}
+  <a href="{{ basics.url }}">
+    {{- basics.url | remove: "https://" -}}
   </a>
   {%- endif -%}
 

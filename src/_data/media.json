@@ -2,21 +2,25 @@
   {
     "network": "linkedin",
     "url": "https://linkedin.com/in/pachewise",
-    "username": "pachewise"
+    "username": "pachewise",
+    "type": "professional"
   },
   {
     "network": "github",
     "url": "https://github.com/pachewise",
-    "username": "pachewise"
+    "username": "pachewise",
+    "type": "professional"
   },
   {
     "network": "instagram",
     "url": "https://instagram.com/pachewise",
-    "username": "pachewise"
+    "username": "pachewise",
+    "type": "casual"
   },
   {
     "network": "substack",
     "url": "https://pachewise.substack.com/",
-    "username": "pachewise"
+    "username": "pachewise",
+    "type": "casual"
   }
 ]

@@ -13,7 +13,7 @@ export default {
         "email": me.email,
         "url": meta.url,
         "location": me.location,
-        "summary": "I'm a proven leader with over 12 years of experience in software engineering, including over 5 years in management, 4 of those at the Director/VP level. I am passionate about building inclusive, high-performing teams and have a strong track record of delivering quality web applications that drive business growth. My expertise spans backend, frontend, cloud infrastructure, and security. I'm also an active contributor to open-source projects. I'm fluent in Spanish.",
+        "summary": "I'm a proven leader with over 12 years of experience in software engineering, including over 5 years in management, 4 of those at the Director/VP level. I am passionate about building inclusive, high-performing teams and have a strong track record of delivering quality web applications that drive business growth. My expertise spans backend, frontend, cloud infrastructure, security, and artificial intelligence. I'm also an active contributor to open-source projects. I'm fluent in Spanish.",
         "profiles": media,
     },
     "work": work,

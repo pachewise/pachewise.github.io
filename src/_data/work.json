@@ -1,66 +1,65 @@
 [
     {
-      "name": "Seek AI",
-      "position": "VP, Engineering",
-      "url": "https://seek.ai",
-      "startDate": "2023-08",
-      "endDate": "2024-09",
-      "summary": "Led a team of 8 engineers (grown from 4) building a state-of-the-art gen AI platform.",
-      "highlights": [
-        "Worked with CPO and VP of AI Research to define roadmap and schedule work into sprints.",
-        "Oversaw and implemented projects such as Slack integration, a Snowflake Native Apps deployment, and major UI/UX improvements, including coding, architecting, and code review.",
-        "Introduced and refined software processes such as Lunch & Learns, On-Calls, SAST."
-      ]
-    },
-    {
-      "name": "Numerator",
-      "position": "Senior Director, Engineering",
-      "url": "https://numerator.com",
-      "startDate": "2019-11",
-      "endDate": "2022-03",
-      "summary": "Directed 3 web application teams and a centralized Data Warehouse team (30 engineers total).",
-      "highlights": [
-        "Maintained 74 NPS, 70 SUS, 99.9% uptime on an analytics platform with billions of rows of data, for a flagship product line driving $100M+ revenue.",
-        "Worked closely with VPs and SVPs of Product on key integration projects.",
-        "Consistently prioritized and contributed to major technology shifts, including migrating from AWS Cognito to Okta and the containerization (docker) and orchestration (k8s) of the Insights Platform.",
-        "Hired, coached, and promoted managers and Senior ICs, with an eye for inclusivity and employee engagement (87.5% employee engagement, 5% quarterly attrition)."
-      ]
-    },
-    {
-      "name": "Numerator",
-      "position": "Manager, Engineering",
-      "url": "https://numerator.com",
-      "startDate": "2019-06",
-      "endDate": "2019-11",
-      "summary": "Hired and mentored engineers across different experience levels for 2 teams (10 engineers).",
-      "highlights": [
-        "30-70 split between IC and Management duties, with code-owner status on key codebases.",
-        "Major projects: an advanced conditional query flow and a 50% test-coverage improvement."
-      ]
-    },
-    {
-      "name": "Numerator",
-      "position": "Senior Software Engineer",
-      "url": "https://numerator.com",
-      "startDate": "2018-11",
-      "endDate": "2019-06",
-      "summary": "Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.",
-      "highlights": [
-        "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
-        "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery).",
-        "Lead Engineer for two teams (5 people total) from Nov 2018 onward."
-      ]
-    },
-    {
-      "name": "Numerator",
-      "position": "Software Engineer",
-      "url": "https://numerator.com",
-      "startDate": "2017-02",
-      "endDate": "2018-11",
-      "summary": "Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.",
-      "highlights": [
-        "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
-        "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery)."
-      ]
-    }
+        "name": "Seek AI",
+        "position": "Vice President, Engineering",
+        "url": "https://seek.ai",
+        "startDate": "2023-08",
+        "endDate": "2024-09",
+        "summary": "Led a team of 8 engineers (grown from 4) building a state-of-the-art gen AI platform.",
+        "highlights": [
+          "Worked with CPO and VP of AI Research to define roadmap and schedule work into sprints.",
+          "Oversaw and implemented projects such as Slack integration, a Snowflake Native Apps deployment, and major UI/UX improvements, including coding, architecting, and code review.",
+          "Introduced and refined software processes such as Lunch & Learns, On-Calls, SAST."
+        ]
+      },
+      {
+        "name": "Numerator",
+        "position": "Senior Director, Engineering",
+        "url": "https://numerator.com",
+        "startDate": "2019-11",
+        "endDate": "2022-03",
+        "summary": "Directed 3 web application teams and a centralized Data Warehouse team (~30 engineers).",
+        "highlights": [
+          "Maintained 74 NPS, 70 SUS, 99.9% uptime on an analytics platform with billions of rows of data, for a flagship product line driving $100M+ revenue.",
+          "Consistently prioritized and contributed to major technology shifts, including the containerization (docker) and orchestration (k8s) of the Insights Platform.",
+          "Hired, coached, and promoted managers and Senior ICs, with an eye for inclusivity and employee engagement (87.5% employee engagement, 5% quarterly attrition)."
+        ]
+      },
+      {
+        "name": "Numerator",
+        "position": "Manager, Engineering",
+        "url": "https://numerator.com",
+        "startDate": "2019-06",
+        "endDate": "2019-11",
+        "summary": "Hired and mentored engineers across different experience levels for 2 teams (10 engineers).",
+        "highlights": [
+          "30-70 split between IC and Management duties, with code-owner status on key codebases.",
+          "Major projects: an advanced conditional query flow and a 50% test-coverage improvement."
+        ]
+      },
+      {
+        "name": "Numerator",
+        "position": "Senior Software Engineer",
+        "url": "https://numerator.com",
+        "startDate": "2018-11",
+        "endDate": "2019-06",
+        "summary": "Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.",
+        "highlights": [
+          "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
+          "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery).",
+          "Lead Engineer for two teams (5 people total) from Nov 2018 onward."
+        ]
+      },
+      {
+        "name": "Numerator",
+        "position": "Software Engineer",
+        "url": "https://numerator.com",
+        "startDate": "2017-02",
+        "endDate": "2018-11",
+        "summary": "Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.",
+        "highlights": [
+          "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
+          "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery)."
+        ]
+      }
 ]
