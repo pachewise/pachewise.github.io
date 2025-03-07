@@ -10,7 +10,8 @@
           "Worked with CPO and VP of AI Research to define roadmap and schedule work into sprints.",
           "Oversaw and implemented projects such as Slack integration, a Snowflake Native Apps deployment, and major UI/UX improvements, including coding, architecting, and code review.",
           "Introduced and refined software processes such as Lunch & Learns, On-Calls, SAST."
-        ]
+        ],
+        "languages": ["Python", "TypeScript"]
       },
       {
         "name": "Numerator",
@@ -23,7 +24,8 @@
           "Maintained 74 NPS, 70 SUS, 99.9% uptime on an analytics platform with billions of rows of data, for a flagship product line driving $100M+ revenue.",
           "Consistently prioritized and contributed to major technology shifts, including the containerization (docker) and orchestration (k8s) of the Insights Platform.",
           "Hired, coached, and promoted managers and Senior ICs, with an eye for inclusivity and employee engagement (87.5% employee engagement, 5% quarterly attrition)."
-        ]
+        ],
+        "languages": ["Python", "JavaScript"]
       },
       {
         "name": "Numerator",
@@ -35,7 +37,8 @@
         "highlights": [
           "30-70 split between IC and Management duties, with code-owner status on key codebases.",
           "Major projects: an advanced conditional query flow and a 50% test-coverage improvement."
-        ]
+        ],
+        "languages": ["Python", "JavaScript"]
       },
       {
         "name": "Numerator",
@@ -48,7 +51,8 @@
           "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
           "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery).",
           "Lead Engineer for two teams (5 people total) from Nov 2018 onward."
-        ]
+        ],
+        "languages": ["Python", "JavaScript"]
       },
       {
         "name": "Numerator",
@@ -60,6 +64,7 @@
         "highlights": [
           "Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.",
           "Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery)."
-        ]
+        ],
+        "languages": ["Python", "JavaScript"]
       }
 ]

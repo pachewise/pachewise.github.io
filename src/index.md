@@ -8,10 +8,11 @@ layout: base
 <a href="/resume">Résumé</a>
 </nav>
 
-<a name="about"></a>
+<section id="about">
 {% include "about.md" | markdownify %}
+</section>
 
-<nav>
+<section id="languages">
 <span>I know:</span>
 {%- for language in languages %}
 <a href="#{{language.name | downcase}}">{{ language.name }}</a>

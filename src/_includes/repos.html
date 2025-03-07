@@ -1,0 +1,17 @@
+{% # original source: https://github.com/maxboeck/resume/blob/9c177fcb8abc315514e57e2701152871a529e2be/src/includes/repositories.njk %}
+{% if repos.length %}
+<ol class="repolist">
+    {% for repo in repos %}
+        <li class="repolist__item">
+            <h3 class="repolist__title"><a href="{{ repo.html_url | append: "/pulls/?q=author%3Apachewise" }}">{{ repo.name }}</a></h3>
+            {% if repo.description %}
+                <p class="repolist__desc">{{ repo.description }}</p>
+            {% endif %}
+            <div class="repolist__stats">
+                <p>{{ repo.stargazers_count }}<span class="sr-only"> stars</span></p>
+                <p>{{ repo.forks_count }}<span class="sr-only"> forks</span></p>
+            </div>
+        </li>
+    {% endfor %}
+</ol>
+{% endif %}
