@@ -1,15 +1,10 @@
 <address>
+  <a href="/" class="no-print back-nav">⇐ jrpache.co</a>
   {%- for profile in basics.profiles -%}
   {%- unless profile.type == "casual" %}
   <a href="{{ profile.url }}"><span class="no-print">{{- profile.network -}}</span><span class="print-only">{{- profile.url | remove: "https://" -}}</span></a>
   {%- endunless %}
   {%- endfor -%}
-
-  {% if basics.url -%}
-  <a href="{{ basics.url }}" class="no-print">
-    {{- basics.url | remove: "https://" -}}
-  </a>
-  {%- endif -%}
 
   {%- if basics.email %}
   <a href="mailto:{{ basics.email }}">

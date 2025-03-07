@@ -40,7 +40,9 @@ html {
         padding-inline-start: 0.25rem !important;
       }
     }
-
+    // header {
+    //   margin-bottom: 0 !important;
+    // }
     .no-print {
       display: none;
     }
@@ -56,18 +58,19 @@ html {
   body {
     max-width: 55rem;
     margin-inline: auto;
-    margin-block: 0.5rem 2rem;
+    margin-block: 2rem;
 
     &>header {
       display: flex;
       padding: 0.5rem;
       flex-direction: column;
       flex-wrap: wrap;
+      // margin-bottom: 2rem;
+
 
       &>h1 {
         font-size: 2rem;
         font-weight: bolder;
-
         flex: 1 0 auto;
       }
 
@@ -85,6 +88,10 @@ html {
         &>a {
           display: block;
           white-space: pre;
+
+          &.back-nav {
+            margin-right: auto;
+          }
 
           &::after {
             margin-inline-start: 0.5rem;
@@ -117,12 +124,12 @@ html {
         row-gap: 0.75rem;
         column-gap: 1rem;
 
-        border-block-start: 1pt solid #6f7179;
         padding-block-start: 0.75rem;
         padding-inline: 0.5rem;
         margin-inline: 0.25rem;
 
         line-height: 1.4;
+        border-block-start: 1pt dashed rgba(0, 0, 0, 0.2);
 
         &>h2 {
           grid-column: 1 / span 1;
