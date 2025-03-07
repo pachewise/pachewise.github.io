@@ -1,7 +1,8 @@
-{
-  "last_updated": "2024 sep 11",
+
+export default {
+  "last_updated": new Date().toISOString(),
   "title": "josé pacheco | software",
-  "title_abrev": "jrpache.co",
+  "title_abbrev": "jrpache.co",
   "description": "The official website of José Pacheco",
   "baseurl": "",
   "url": "",

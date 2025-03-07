@@ -2,16 +2,16 @@
   <div id="brand">
     <div id="logo">
       <h2 id="logotype"><a href="{{ site.baseurl }}">josé <br/>pacheco</a></h2>
-      {{ personal.position }}{% if personal.company %} <a href="{{ personal.company_url }}">@{{ personal.company }}</a>{% endif %}<br/>
-      <em>{{ personal.city }}</em>
+      {{ me.status | default: resume.basics.label }}{% if work[0].endDate == null or work[0].endDate == "" %} <a href="{{ work[0].url }}">@{{ work[0].name }}</a>{% endif %}<br/>
+      <em>{{ me.location.city }}</em>
     </div>
     <div id="contact">
       <ul id="links">
         {% for contact in media %}
         <li>
-          <span class="ctct">{{ contact.name }}</span>
+          <span class="ctct">{{ contact.network }}</span>
           <a href="{{ contact.url }}{{ contact.username }}"
-             id="{{ contact.name }}"
+             id="{{ contact.network }}"
              title="{{ contact.name | capitalize }}">@{{ contact.username }}</a>
         </li>
         {% endfor %}

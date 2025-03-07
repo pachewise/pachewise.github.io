@@ -12,23 +12,12 @@
       {{ site.title }}
     {% endif %}
   </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="{{ eleventy.generator }}">
-  {% assign metas = "author, designer, developer" | split: ", " %}
-  {% for meta in metas %}
-  <meta name="{{ meta }}" content="{{ site.author }}"/>
-  {% endfor %}
+  {% assign pageDescription = site.description %}
+  {%- include "meta.liquid" %}
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
-  <!-- FAVICON and mobile icon support -->
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
-  <link rel="mask-icon" href="/assets/img/favicon.svg">
 </head>
 <body class="container">
 

@@ -1,0 +1,128 @@
+[
+    {
+        "institution": "Massachusetts Institute of Technology",
+        "url": "https://web.mit.edu/",
+        "area": "Electrical Engineering and Computer Science",
+        "studyType": "Bachelor",
+        "startDate": "2009",
+        "endDate": "2013",
+        "courses":
+                [
+                    {
+                      "courseNumber": "3.091",
+                      "courseTitle": "Intro to Solid-State Chemistry",
+                      "department": "Materials Science and Engineering"
+                    },
+                    {
+                      "courseNumber": "6.003",
+                      "courseTitle": "Signals and Systems",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.004",
+                      "courseTitle": "Computation Structures",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.005",
+                      "courseTitle": "Software Construction",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.006",
+                      "courseTitle": "Intro to Algorithms",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.013",
+                      "courseTitle": "Electromagnetics & Applications",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.02",
+                      "courseTitle": "Intro to EECS II: Digital Communication Systems",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.033",
+                      "courseTitle": "Computer System Engineering",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.034",
+                      "courseTitle": "Artificial Intelligence",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.042",
+                      "courseTitle": "Mathematics for Computer Science",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.046",
+                      "courseTitle": "Design and Analysis of Algorithms",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "6.S064",
+                      "courseTitle": "Machine Learning",
+                      "department": "Electrical Engineering and Computer Science"
+                    },
+                    {
+                      "courseNumber": "7.013",
+                      "courseTitle": "Introductory Biology",
+                      "department": "Biology"
+                    },
+                    {
+                      "courseNumber": "14.01",
+                      "courseTitle": "Principles of Microeconomics",
+                      "department": "Economics"
+                    },
+                    {
+                      "courseNumber": "14.02",
+                      "courseTitle": "Principles of Macroeconomics",
+                      "department": "Economics"
+                    },
+                    {
+                      "courseNumber": "14.16",
+                      "courseTitle": "Strategy and Information",
+                      "department": "Sloan School of Management"
+                    },
+                    {
+                      "courseNumber": "18.03",
+                      "courseTitle": "Differential Equations",
+                      "department": "Mathematics"
+                    },
+                    {
+                      "courseNumber": "18.440",
+                      "courseTitle": "Probability & Random Variables",
+                      "department": "Mathematics"
+                    },
+                    {
+                      "courseNumber": "21F.301",
+                      "courseTitle": "French I",
+                      "department": "Global Languages"
+                    },
+                    {
+                      "courseNumber": "21L.011",
+                      "courseTitle": "The Film Experience",
+                      "department": "Literature"
+                    },
+                    {
+                      "courseNumber": "24.900",
+                      "courseTitle": "Introduction to Linguistics",
+                      "department": "Linguistics"
+                    },
+                    {
+                      "courseNumber": "24.902",
+                      "courseTitle": "Language & Structure II: Syntax",
+                      "department": "Linguistics"
+                    },
+                    {
+                      "courseNumber": "STS.003",
+                      "courseTitle": "The Rise of Modern Science",
+                      "department": "Science, Technology, and Society"
+                    }
+                ]
+    }
+]

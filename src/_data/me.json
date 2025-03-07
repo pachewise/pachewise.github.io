@@ -1,0 +1,11 @@
+{
+    "name": "José Pacheco",
+    "email": "hi@jrpache.co",
+    "status": "Freelancing",
+    "avatar": "me.jpg",
+    "location": {
+        "city": "Brooklyn",
+        "region": "NY",
+        "countryCode": "US"
+    }
+}

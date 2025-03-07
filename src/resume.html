@@ -1,0 +1,36 @@
+{% assign pageDescription = "Online Résumé of " | append: me.name %}
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  {%- include "meta.liquid", pageDescription: pageDescription %}
+  <style>
+    {%- include "resume/styles.css" %}
+  </style>
+  <title>
+    {{ resume.basics.name }},
+    {{ resume.basics.label }}
+  </title>
+</head>
+<body>
+  {%
+    include "resume/header.liquid",
+    basics: resume.basics
+  %}
+  <main>
+    {%
+      include "resume/summary.liquid",
+      summary: resume.basics.summary
+    %}
+    {%
+      include "resume/experience.liquid",
+      experience: resume.work
+    %}
+    {%
+      include "resume/education.liquid",
+      education: resume.education
+    %}
+  </main>
+</body>
+
+</html>

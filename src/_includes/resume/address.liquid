@@ -1,0 +1,19 @@
+<address>
+  {%- for profile in basics.profiles -%}
+  <a href="{{ profile.url }}">
+    {{- profile.network -}}
+  </a>
+  {%- endfor -%}
+
+  {% if basics.url -%}
+  <a href="https://{{ basics.url }}">
+    {{- basics.url -}}
+  </a>
+  {%- endif -%}
+
+  {%- if basics.email %}
+  <a href="mailto:{{ basics.email }}">
+    {{- basics.email -}}
+  </a>
+  {%- endif %}
+</address>

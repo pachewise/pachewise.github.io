@@ -1,21 +1,21 @@
 [
   {
-    "name": "linkedin",
-    "url": "https://linkedin.com/in/",
+    "network": "linkedin",
+    "url": "https://linkedin.com/in/pachewise",
     "username": "pachewise"
   },
   {
-    "name": "github",
-    "url": "https://github.com/",
+    "network": "github",
+    "url": "https://github.com/pachewise",
     "username": "pachewise"
   },
   {
-    "name": "instagram",
-    "url": "https://instagram.com/",
+    "network": "instagram",
+    "url": "https://instagram.com/pachewise",
     "username": "pachewise"
   },
   {
-    "name": "substack",
+    "network": "substack",
     "url": "https://pachewise.substack.com/",
     "username": "pachewise"
   }

@@ -1,0 +1,63 @@
+{% # Original Source: https://github.com/maxboeck/resume/blob/9c177fcb8abc315514e57e2701152871a529e2be/src/includes/meta.njk %}
+{% assign absolutePageUrl = "https://" | append: meta.url | append: page.url %}
+{% assign pageTitle = me.name %}
+{% if me.title %}
+    {% assign pageTitle = pageTitle | append: " - " | append: resume.basics.label %}
+{% endif %}
+{% if me.location %}
+    {% assign pageTitle = pageTitle | append: " in " | append: me.location.city %}
+{% endif %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ pageTitle }}</title>
+
+{% # General %}
+<meta name="description" content="{{ pageDescription }}">
+<link rel="canonical" href="{{ absolutePageUrl }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+
+{% assign metas = "author, designer, developer" | split: ", " %}
+{% for meta in metas %}
+<meta name="{{ meta }}" content="{{ me.name }}"/>
+{% endfor %}
+
+{% # Open Graph %}
+<meta property="og:site_name" content="{{ site.title_abbrev }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:locale" content="{{ meta["og:locale"] }}">
+<meta name="twitter:card" content="summary">
+{% if me.avatar %}
+    {% assign avatarUrl = "/assets/images/" | append: me.avatar %}
+    <meta property="og:image" content="{{ "https://" | append: meta.url | append: avatarUrl | url }}">
+{% endif %}
+
+{% # Favicon %}
+<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<link rel="mask-icon" href="/assets/img/favicon.svg">
+
+{% # JSON LD %}
+<script type="application/ld+json">
+        {
+                "name":"{{ me.name }}",
+                "description":"{{ resume.basics.label }}{% if me.location %} in {{ me.location.city }}{% endif %}",
+                "author": {
+                        "@type":"Person",
+                        "name":"{{ me.name }}"
+                },
+                "@type":"WebSite",
+                "url":"{{ meta.url }}",
+                "image":"{{ meta.url }}/assets/images/{{ me.avatar }}",
+                "headline":"{{ me.name }}",
+                "sameAs":[
+                        {% for social in media %}
+                                "{{ social.url }}"{% if forloop.last == false %},{% endif %}
+                        {% endfor %}
+                ],
+                "@context":"http://schema.org"
+        }
+</script>
