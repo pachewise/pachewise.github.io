@@ -16,6 +16,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  .print-only {
+    display: none;
+  }
+
   @media print {
     @page {
       margin: 0.5in;
@@ -35,6 +39,13 @@ html {
       li {
         padding-inline-start: 0.25rem !important;
       }
+    }
+
+    .no-print {
+      display: none;
+    }
+    .print-only {
+      display: initial;
     }
   }
 
@@ -106,7 +117,7 @@ html {
         row-gap: 0.75rem;
         column-gap: 1rem;
 
-        border-block-start: 2pt solid #0E2181;
+        border-block-start: 1pt solid #6f7179;
         padding-block-start: 0.75rem;
         padding-inline: 0.5rem;
         margin-inline: 0.25rem;
