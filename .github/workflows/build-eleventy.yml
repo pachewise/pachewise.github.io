@@ -15,9 +15,10 @@ jobs:
      - name: Git Checkout
        uses: actions/checkout@v3
      - name: Setup Node and Yarn
-       uses: actions/setup-node@v3
+       uses: actions/setup-node@v4
        with:
          cache: yarn
+         node-version-file: package.json
      - run: yarn install --frozen-lockfile
      - run: yarn build
      - name: Deploy
