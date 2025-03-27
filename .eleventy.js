@@ -1,6 +1,6 @@
 import * as sass from "sass";
 import * as path from "node:path";
-
+import { IdAttributePlugin } from "@11ty/eleventy";
 
 export default async function (eleventyConfig) {
   eleventyConfig.addTemplateFormats("scss");
@@ -31,7 +31,8 @@ export default async function (eleventyConfig) {
         }
       }
     }
-	});
+  });
+  eleventyConfig.addPlugin(IdAttributePlugin);
   eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("CNAME");
 

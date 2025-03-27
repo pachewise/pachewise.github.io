@@ -1,30 +1,22 @@
 <header id="top">
-  <div id="brand">
-    <div id="logo">
-      <h2 id="logotype"><a href="{{ site.baseurl }}">josé <br/>pacheco</a></h2>
-      {{ me.status | default: resume.basics.label }}{% if work[0].endDate == null or work[0].endDate == "" %} <a href="{{ work[0].url }}">@{{ work[0].name }}</a>{% endif %}<br/>
-      <em>{{ me.location.city }}</em>
-    </div>
-    <div id="contact">
-      <ul id="links">
-        {% for contact in media %}
-        <li>
-          <span class="ctct">{{ contact.network }}</span>
-          <a href="{{ contact.url }}{{ contact.username }}"
-             id="{{ contact.network }}"
-             title="{{ contact.name | capitalize }}">@{{ contact.username }}</a>
-        </li>
-        {% endfor %}
-        <li>
-          <a href="mailto:{{ site.email }}" id="mail" title="e-mail">{{ site.email }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
   <div id="photo">
     <figure>
-      <img height="150" width="150" src="assets/img/me.jpg" />
-      <figcaption>(me)</figcaption>
+      <img height="150" width="150" src="assets/img/me.jpg" alt="The author" />
     </figure>
+  </div>
+  <div id="brand">
+    <div id="logo">
+      <h1 id="logotype"><a href="{{ site.baseurl }}">josé pacheco</a></h1>
+      <em>{{ me.status | default: resume.basics.label }}{% if work[0].endDate == null or work[0].endDate == "" %} <a href="{{ work[0].url }}">@{{ work[0].name }}</a>{% endif %}
+      in {{ me.location.city }}</em>
     </div>
+    <address id="contact">
+        {% for contact in media %}
+          <a href="{{ contact.url }}"
+             id="{{ contact.network }}"
+             title="{{ contact.name | capitalize }}">{{ contact.network }}</a>
+        {% endfor %}
+          <a href="mailto:{{ site.email }}" id="mail" title="e-mail">{{ site.email }}</a>
+    </address>
+  </div>
 </header>

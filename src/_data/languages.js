@@ -15,12 +15,9 @@ const relevantWork = (language) => (
 );
 
 const repos = await reposFn();
-console.log(work, repos);
 const relevantOss = (language) => (
     reduceArray(repos.map(r => ({ name: r.name, url: r.html_url, language: r.language })), o => o.language === language)
 );
-
-console.log([...relevantWork("Python")], "moo")
 
 export default [
     {
