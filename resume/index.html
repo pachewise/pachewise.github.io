@@ -1,0 +1,449 @@
+
+<!doctype html>
+<html lang="en-US">
+
+<head>
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>José Pacheco - Senior Engineering Leader in Brooklyn</title>
+
+
+<meta name="description" content="Online Résumé of José Pacheco">
+<link rel="canonical" href="https://https://jrpache.co/resume/">
+<meta name="generator" content="Eleventy v3.0.1">
+
+
+
+<meta name="author" content="José Pacheco">
+
+<meta name="designer" content="José Pacheco">
+
+<meta name="developer" content="José Pacheco">
+
+
+
+<meta property="og:site_name" content="jrpache.co">
+<meta property="og:title" content="José Pacheco - Senior Engineering Leader in Brooklyn">
+<meta property="og:description" content="Online Résumé of José Pacheco">
+<meta property="og:url" content="https://https://jrpache.co/resume/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+
+    
+    <meta property="og:image" content="https://https://jrpache.co/assets/images/me.jpg">
+
+
+
+<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<link rel="mask-icon" href="/assets/img/favicon.svg">
+
+
+<script type="application/ld+json">
+        {
+                "name":"José Pacheco",
+                "description":"Senior Engineering Leader in Brooklyn",
+                "author": {
+                        "@type":"Person",
+                        "name":"José Pacheco"
+                },
+                "@type":"WebSite",
+                "url":"https://jrpache.co",
+                "image":"https://jrpache.co/assets/images/me.jpg",
+                "headline":"José Pacheco",
+                "sameAs":[
+                        
+                                "https://linkedin.com/in/pachewise",
+                        
+                                "https://github.com/pachewise",
+                        
+                                "https://instagram.com/pachewise",
+                        
+                                "https://pachewise.substack.com/"
+                        
+                ],
+                "@context":"http://schema.org"
+        }
+</script>
+
+  <style>html {
+    font-size: 14pt;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .print-only {
+    display: none;
+  }
+
+  @media print {
+    @page {
+      margin: 0.5in;
+    }
+
+    html {
+      font-size: 10pt;
+    }
+
+    body {
+      margin-block: 0 !important;
+    }
+
+    ul {
+      padding-inline-start: 1.25rem !important;
+
+      li {
+        padding-inline-start: 0.25rem !important;
+      }
+    }
+    // header {
+    //   margin-bottom: 0 !important;
+    // }
+    .no-print {
+      display: none;
+    }
+    .print-only {
+      display: initial;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+
+  body {
+    max-width: 55rem;
+    margin-inline: auto;
+    margin-block: 2rem;
+
+    &>header {
+      display: flex;
+      padding: 0.5rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      // margin-bottom: 2rem;
+
+
+      &>h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        flex: 1 0 auto;
+      }
+
+      &>address {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: row;
+        justify-content: right;
+        gap: 1em;
+
+        font-style: normal;
+        font-size: 0.9rem;
+        line-height: 1.6;
+
+        &>a {
+          display: block;
+          white-space: pre;
+
+          &.back-nav {
+            margin-right: auto;
+            opacity: 50%;
+          }
+
+          &::after {
+            margin-inline-start: 0.5rem;
+
+            display: inline-block;
+
+            position: relative;
+            right: 0.5pt;
+          }
+        }
+      }
+    }
+
+    &>main {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      row-gap: 0.75rem;
+
+      /* h2-level sections, e.g., "Summary", "Experience", or "Education" */
+      &>section {
+        grid-column: 1 / 3;
+
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: subgrid;
+        justify-items: stretch;
+        align-items: start;
+
+        row-gap: 0.75rem;
+        column-gap: 1rem;
+
+        padding-block-start: 0.75rem;
+        padding-inline: 0.5rem;
+        margin-inline: 0.25rem;
+
+        line-height: 1.4;
+        border-block-start: 1pt dashed rgba(0, 0, 0, 0.2);
+
+        &>h2 {
+          grid-column: 1 / span 1;
+
+          margin-block-start: 0.2rem;
+
+          line-height: 1;
+
+          font-size: 1.1rem;
+          font-weight: lighter;
+          text-transform: uppercase;
+        }
+
+        &>p,
+        &>section {
+          grid-column: 2 / 3;
+        }
+
+        &>section {
+          display: grid;
+          gap: 0.25rem;
+
+          &>header {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 0.25rem;
+
+            &>h3 {
+              grid-column: 1 / span 1;
+
+              font-size: 1rem;
+              font-weight: bolder;
+            }
+
+            &>span {
+              grid-column: 1;
+
+              font-weight: lighter;
+
+              &>.focus {
+                text-transform: lowercase;
+              }
+
+              &.date {
+                grid-column: 2;
+                grid-row: 1;
+
+                justify-self: end;
+              }
+            }
+          }
+
+          &>ul {
+            padding-inline-start: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 50rem) {
+    body {
+      main {
+        &>section {
+
+          &>h2 {
+            grid-column-end: span 2;
+            justify-self: center;
+
+            font-size: 1.25rem;
+          }
+
+          &>p,
+          &>section {
+            grid-column-start: 1;
+
+            &>header {
+              &>h3 {
+                grid-column-end: span 2;
+              }
+
+              &>span.date {
+                grid-row: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  </style>
+  <title>
+    José Pacheco,
+    Senior Engineering Leader
+  </title>
+</head>
+<body>
+  <header>
+  <h1 id="jose-pacheco">
+    José Pacheco
+  </h1>
+  <address>
+  <a href="/" class="no-print back-nav">⇐ jrpache.co</a>
+  <a href="https://linkedin.com/in/pachewise"><span class="no-print">linkedin</span><span class="print-only">linkedin.com/in/pachewise</span></a>
+  <a href="https://github.com/pachewise"><span class="no-print">github</span><span class="print-only">github.com/pachewise</span></a>
+  <a href="mailto:hi@jrpache.co">hi@jrpache.co</a>
+</address>
+
+</header>
+
+  <main>
+    <section>
+  <h2 id="summary">Summary</h2>
+  <p>I'm a proven leader with over 12 years of experience in software engineering, including over 5 years in management, 4 of those at the Director/VP level. I am passionate about building inclusive, high-performing teams and have a strong track record of delivering quality web applications that drive business growth. My expertise spans backend, frontend, cloud infrastructure, security, and artificial intelligence. I'm also an active contributor to open-source projects. I'm fluent in Spanish.</p>
+</section>
+
+    <section>
+  <h2 id="experience">Experience</h2>
+    <section>
+      <header>
+        <h3 id="vice-president-engineering">Vice President, Engineering</h3>
+        <span>Seek AI</span>
+        <span class="date">
+          2023 Aug &ndash;&nbsp;2024 Sep
+        </span>
+      </header>
+      <ul>
+        <li>Led a team of 8 engineers (grown from 4) building a state-of-the-art gen AI platform.</li>
+          <li>
+            Worked with CPO and VP of AI Research to define roadmap and schedule work into sprints.
+          </li>
+          <li>
+            Oversaw and implemented projects such as Slack integration, a Snowflake Native Apps deployment, and major UI/UX improvements, including coding, architecting, and code review.
+          </li>
+          <li>
+            Introduced and refined software processes such as Lunch & Learns, On-Calls, SAST.
+          </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h3 id="senior-director-engineering">Senior Director, Engineering</h3>
+        <span>Numerator</span>
+        <span class="date">
+          2019 Nov &ndash;&nbsp;2022 Mar
+        </span>
+      </header>
+      <ul>
+        <li>Directed 3 web application teams and a centralized Data Warehouse team (~30 engineers).</li>
+          <li>
+            Maintained 74 NPS, 70 SUS, 99.9% uptime on an analytics platform with billions of rows of data, for a flagship product line driving $100M+ revenue.
+          </li>
+          <li>
+            Consistently prioritized and contributed to major technology shifts, including the containerization (docker) and orchestration (k8s) of the Insights Platform.
+          </li>
+          <li>
+            Hired, coached, and promoted managers and Senior ICs, with an eye for inclusivity and employee engagement (87.5% employee engagement, 5% quarterly attrition).
+          </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h3 id="manager-engineering">Manager, Engineering</h3>
+        <span>Numerator</span>
+        <span class="date">
+          2019 Jun &ndash;&nbsp;2019 Nov
+        </span>
+      </header>
+      <ul>
+        <li>Hired and mentored engineers across different experience levels for 2 teams (10 engineers).</li>
+          <li>
+            30-70 split between IC and Management duties, with code-owner status on key codebases.
+          </li>
+          <li>
+            Major projects: an advanced conditional query flow and a 50% test-coverage improvement.
+          </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h3 id="senior-software-engineer">Senior Software Engineer</h3>
+        <span>Numerator</span>
+        <span class="date">
+          2018 Nov &ndash;&nbsp;2019 Jun
+        </span>
+      </header>
+      <ul>
+        <li>Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.</li>
+          <li>
+            Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.
+          </li>
+          <li>
+            Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery).
+          </li>
+          <li>
+            Lead Engineer for two teams (5 people total) from Nov 2018 onward.
+          </li>
+      </ul>
+    </section>
+    <section>
+      <header>
+        <h3 id="software-engineer">Software Engineer</h3>
+        <span>Numerator</span>
+        <span class="date">
+          2017 Feb &ndash;&nbsp;2018 Nov
+        </span>
+      </header>
+      <ul>
+        <li>Maintained and improved a data abstraction layer in Django, SQLAlchemy and Pandas.</li>
+          <li>
+            Led or single-handedly delivered on key roadmap initiatives, such as a 'Survey-on-Demand' module.
+          </li>
+          <li>
+            Contributed to or forked key open-source dependencies (vertica-python, sqlalchemy, celery).
+          </li>
+      </ul>
+    </section>
+</section>
+
+    <section>
+  <h2 id="education">Education</h2>
+    <section>
+      <header>
+        <h3 id="bachelor-in-electrical-engineering-and-computer-science">
+          Bachelor in Electrical Engineering and Computer Science
+        </h3>
+        <span>
+          Massachusetts Institute of Technology
+        </span>
+        <span class="date">
+          2009 &ndash; 2013
+        </span>
+      </header>
+    </section>
+</section>
+
+  </main>
+</body>
+
+</html>
