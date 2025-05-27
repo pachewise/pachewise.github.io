@@ -40,6 +40,10 @@ export default [
             {
                 "name": "Ptolemy",
                 "url": "https://github.com/PtolemyLovesYou/ptolemy"
+            },
+            {
+                "name": "Catanatron",
+                "url": "https://github.com/bcollazo/catanatron"
             }
         ]
     },
