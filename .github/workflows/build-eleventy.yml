@@ -1,4 +1,6 @@
 name: Build Site with Eleventy
+permissions:
+  contents: write
 on:
   push:
     branches:
@@ -27,4 +29,3 @@ jobs:
          publish_dir: _site
          publish_branch: gh-pages
          github_token: ${{ secrets.GITHUB_TOKEN }}
-
