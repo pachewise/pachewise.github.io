@@ -27,7 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "v3.0.1-alpha.4"
   },
-  "packageManager": "yarn@4.7.0",
+  "packageManager": "yarn@4.9.2",
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "sass": "^1.85.1"
