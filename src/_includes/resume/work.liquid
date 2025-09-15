@@ -9,7 +9,7 @@
           {% if exp.period -%}
             {{ exp.period }}
           {%- else -%}
-            {{ exp.startDate | date: "%Y %b", 0 }} &ndash;&nbsp;{{ exp.endDate | date: "%Y %b", 0 }}
+            {{ exp.startDate | date: "%Y %b", 0 }} &ndash;&nbsp;{% if exp.endDate %}{{ exp.endDate | date: "%Y %b", 0 }}{% else %}Present{% endif %}
           {%- endif %}
         </span>
       </header>
