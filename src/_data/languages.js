@@ -20,9 +20,15 @@ const relevantOss = (language) => (
 );
 
 export default [
+        {
+        "name": "Go",
+        "tagline": "My new bread and butter",
+        "experience": [...relevantWork("Go")],
+        "oss": []
+    },
     {
       "name": "Python",
-      "tagline": "My bread and butter.",
+      "tagline": "Everyone's favorite scripting language",
       "experience": [
         {
             "name": "MIT (Lab Assistant)",
@@ -52,5 +58,6 @@ export default [
         "tagline": "Your favorite language's favorite language.",
         "experience": [],
         "oss": []
-    }
+    },
+
 ]
