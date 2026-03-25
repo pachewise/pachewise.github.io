@@ -11,7 +11,7 @@ const reduceArray = (objects, func) => (objects.reduce((addr, curr) => {
 
 
 const relevantWork = (language) => (
-    reduceArray(work.map(j => ({ name: j.name, url: j.url, languages: j.languages})), o => o.languages.includes(language))
+    reduceArray(work.map(j => ({ name: j.name, url: j.url, languages: j.languages })), o => o.languages.includes(language))
 );
 
 const repos = await reposFn();
@@ -20,23 +20,23 @@ const relevantOss = (language) => (
 );
 
 export default [
-        {
+    {
         "name": "Go",
         "tagline": "My new bread and butter",
         "experience": [...relevantWork("Go")],
         "oss": []
     },
     {
-      "name": "Python",
-      "tagline": "Everyone's favorite scripting language",
-      "experience": [
-        {
-            "name": "MIT (Lab Assistant)",
-            "url": "https://web.mit.edu/6.01/www/"
-        },
-        ...relevantWork("Python")
-      ],
-      "oss": [...relevantOss("Python")]
+        "name": "Python",
+        "tagline": "Everyone's favorite scripting language",
+        "experience": [
+            {
+                "name": "MIT (Lab Assistant)",
+                "url": "https://web.mit.edu/6.01/www/"
+            },
+            ...relevantWork("Python")
+        ],
+        "oss": [...relevantOss("Python")]
     },
     {
         "name": "TypeScript",
