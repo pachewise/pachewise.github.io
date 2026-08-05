@@ -417,6 +417,7 @@ header {
   box-sizing: border-box;
   display: flex;
   gap: 2em;
+  align-items: center; /* restore vertical centering between photo and brand */
 }
 
 #brand {
@@ -441,6 +442,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  align-self: center; /* ensure vertical centering in header */
 }
 
 #logo h1 {
@@ -518,14 +520,16 @@ footer {
   font-size: smaller;
 }
 
+/* soften underline and reduce visual weight of decorative rules */
 nav a {
-  text-decoration: underline rgba(0, 0, 0, 0.2) 0.2em;
+  text-decoration: underline rgba(0, 0, 0, 0.12) 0.12em;
+  text-decoration-thickness: 0.12em;
   font-weight: bold;
   text-underline-position: under;
   text-decoration-skip-ink: none;
 }
 nav a:hover, nav a:focus {
-  text-decoration-color: rgba(0, 0, 0, 0.6);
+  text-decoration-color: rgba(0, 0, 0, 0.5);
 }
 
 .blurb {
@@ -662,5 +666,12 @@ nav a:hover, nav a:focus {
   footer {
     font-size: smaller;
     padding-block-start: 1rem;
+  }
+}
+/* On wider screens, remove mobile border-bottom and keep nav lighter */
+@media screen and (min-width: 48.0625rem) {
+  nav[aria-label="main navigation"] > a {
+    border-bottom: none;
+    padding: 0.15rem 0;
   }
 }
