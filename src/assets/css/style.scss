@@ -39,10 +39,9 @@ body {
     font-family: $sans-serif;
     text-rendering: optimizeLegibility;
     height: 100%;
-    max-width: 750px;   // changed from fixed width to max-width
-    width: 100%;
+    // 750px on wide screens, fluid with 1rem side gutters on narrow ones
+    width: min(750px, 100% - 2rem);
     margin: 4rem auto;
-    padding-inline: 1rem; // small page padding on small screens
     align-items: center;
     line-height: 1.6;
     font-size: 18px;
@@ -72,7 +71,6 @@ header {
     box-sizing: border-box;
     display: flex;
     gap: 2em;
-    align-items: center; /* restore vertical centering between photo and brand */
 }
 
 #brand {
@@ -94,24 +92,9 @@ header {
 
 }
 
-/* Keep title + subtitle tightly grouped at all sizes */
 #logo {
     margin-top: 0;
     margin-bottom: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-self: center; /* ensure vertical centering in header */
-}
-
-#logo h1 {
-    margin: 0;
-}
-
-#logo em {
-    display: block;
-    margin: 0;
-    font-style: italic;
 }
 
 #logotype a {
@@ -127,9 +110,6 @@ header {
         border-radius: 50%;
         overflow-clip-margin: content-box;
         overflow: clip;
-        display: block;
-        max-width: 100%;
-        height: auto;
     }
 
     figure {
@@ -187,16 +167,14 @@ $col-count: 3;
     }
 }
 
-/* soften underline and reduce visual weight of decorative rules */
 nav a {
-    text-decoration: underline rgba(0, 0, 0, 0.12) 0.12em;
-    text-decoration-thickness: 0.12em;
+    text-decoration: underline rgba(0, 0, 0, 0.2) .2em;
     font-weight: bold;
     text-underline-position: under;
     text-decoration-skip-ink: none;
 
     &:hover, &:focus {
-        text-decoration-color: rgba(0, 0, 0, 0.5);
+        text-decoration-color: rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -222,147 +200,81 @@ nav a {
     }
 }
 
-/* Mobile / narrow-screen improvements */
-@media screen and (max-width: 48rem) { /* ~768px */
-  body {
-    margin: 2rem auto; /* increased margin for smaller screens */
-    font-size: 16px;
-    padding-inline: 1rem; /* slightly more padding */
-  }
+// Narrow-screen layout (~768px and below)
+@media screen and (max-width: 48em) {
+    body {
+        margin-block: 2rem;
+        font-size: 16px;
+    }
 
-  header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
+    header {
+        flex-direction: column;
+        gap: 1.5em;
+    }
 
-  #brand {
-    display: grid;
-    grid-template-columns: 1fr; /* stack brand elements */
-    gap: 0.5rem;
-  }
+    #photo img {
+        width: 120px;
+        height: 120px;
+    }
 
-  /* Make social links two columns; keep email on its own line */
-  #contact {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5rem 1rem;
-    align-items: start;
-  }
+    // stack name/subtitle above the contact links
+    #brand {
+        grid-template-columns: 1fr;
+        gap: 1em;
 
-  #contact a {
-    display: block;
-    padding: 0.25rem 0;
-  }
+        #contact {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.25em 1em;
 
-  /* ensure the mail anchor spans both columns and appears on its own row */
-  #contact a#mail {
-    grid-column: 1 / -1;
-  }
+            a {
+                padding-block: 0.25em;
+            }
 
-  #photo {
-    justify-self: start;
-  }
+            // e-mail is the longest link: give it its own full-width row
+            a#mail {
+                grid-column: 1 / -1;
+            }
+        }
+    }
 
-  #photo img {
-    width: 96px;
-    height: auto;
-    display: block;
-  }
+    // one nav item per row, with comfortable tap targets;
+    // subnavs stay visible, indented and wrapping beneath their parent
+    :not(nav) > nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25em;
+        margin: 2em 0;
 
-  /* Collapse two-column blocks into single column */
-  .block > div {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
+        > a,
+        > div > a {
+            display: block;
+            padding-block: 0.5em;
+        }
 
-  /* Make main navigation items one per row and hide subnav until hover. */
-  /* Targets the specific main navigation used on the index page */
-  nav[aria-label="main navigation"] {
-    display: block;
-  }
+        nav {
+            margin: 0 0 0.5em 1.5em;
+            flex-flow: row wrap;
+            gap: 0.25em 1.25em;
 
-  nav[aria-label="main navigation"] > a,
-  nav[aria-label="main navigation"] > div {
-    display: block;
-    width: 100%;
-  }
+            a {
+                padding-block: 0.25em;
+            }
+        }
+    }
 
-  nav[aria-label="main navigation"] > a {
-    padding: 0.45rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    text-decoration: none;
-  }
+    // collapse two-column language blocks into a single column
+    .block > div {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
 
-  nav[aria-label="main navigation"] > div {
-    position: relative; /* for absolute subnav */
-  }
+    // justified text creates rivers of whitespace in narrow columns
+    .blurb {
+        text-align: left;
+    }
 
-  nav[aria-label="main navigation"] > div > a {
-    display: block;
-    padding: 0.45rem 0;
-  }
-
-  /* Hide nested subnavs by default on mobile */
-  nav[aria-label="main navigation"] > div > nav {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background: white;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    padding: 0.5rem;
-    min-width: 180px;
-    z-index: 50;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  /* Show subnav on hover or focus-within (keyboard accessible) */
-  nav[aria-label="main navigation"] > div:hover > nav,
-  nav[aria-label="main navigation"] > div:focus-within > nav {
-    display: flex;
-  }
-
-  nav[aria-label="main navigation"] > div > nav a {
-    white-space: nowrap;
-    padding: 0.25rem 0.5rem;
-    display: block;
-  }
-
-  /* Adjust other top-level navs so they remain usable */
-  :not(nav) > nav {
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin: 1.5rem 0;
-  }
-  :not(nav) > nav nav {
-    margin: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-  }
-
-  nav a {
-    font-size: 0.95rem;
-    text-decoration-thickness: 0.15em;
-  }
-
-  .examples {
-    justify-self: stretch;
-  }
-
-  footer {
-    font-size: smaller;
-    padding-block-start: 1rem;
-  }
-}
-
-/* On wider screens, remove mobile border-bottom and keep nav lighter */
-@media screen and (min-width: 48.0625rem) {
-  nav[aria-label="main navigation"] > a {
-    border-bottom: none;
-    padding: 0.15rem 0;
-  }
+    .examples {
+        justify-self: start;
+    }
 }
